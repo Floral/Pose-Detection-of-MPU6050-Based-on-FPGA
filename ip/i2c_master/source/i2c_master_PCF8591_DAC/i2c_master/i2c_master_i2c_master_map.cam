@@ -1,0 +1,58 @@
+[ START MERGED ]
+n3577 i2c_master_config_inst/i2c_master_logic_inst/sda_ctl
+i2c_master_config_inst/i2c_master_logic_inst/n6652 sda_r
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+clk_div_inst/add_3715_10/S1
+clk_div_inst/add_3715_10/S0
+clk_div_inst/add_3715_20/S1
+clk_div_inst/add_3715_20/S0
+clk_div_inst/add_3715_22/S1
+clk_div_inst/add_3715_22/S0
+clk_div_inst/add_3715_2/S1
+clk_div_inst/add_3715_2/S0
+clk_div_inst/add_3715_2/CI
+clk_div_inst/add_3715_24/S1
+clk_div_inst/add_3715_24/S0
+clk_div_inst/add_3715_16/S1
+clk_div_inst/add_3715_16/S0
+clk_div_inst/add_3715_26/S1
+clk_div_inst/add_3715_26/S0
+clk_div_inst/add_3715_28/S1
+clk_div_inst/add_3715_28/S0
+clk_div_inst/add_3715_18/S1
+clk_div_inst/add_3715_18/S0
+clk_div_inst/add_3715_30/S0
+clk_div_inst/add_3715_30/CO
+clk_div_inst/cnt_p_1107_add_4_1/S0
+clk_div_inst/cnt_p_1107_add_4_1/CI
+clk_div_inst/add_3715_4/S1
+clk_div_inst/add_3715_4/S0
+clk_div_inst/add_3715_8/S1
+clk_div_inst/add_3715_8/S0
+clk_div_inst/add_3715_6/S1
+clk_div_inst/add_3715_6/S0
+clk_div_inst/add_3715_12/S1
+clk_div_inst/add_3715_12/S0
+clk_div_inst/add_3715_14/S1
+clk_div_inst/add_3715_14/S0
+clk_div_inst/cnt_p_1107_add_4_33/S1
+clk_div_inst/cnt_p_1107_add_4_33/CO
+i2c_master_config_inst/wave_rom_address_1108_add_4_1/S0
+i2c_master_config_inst/wave_rom_address_1108_add_4_1/CI
+i2c_master_config_inst/wave_rom_address_1108_add_4_9/S1
+i2c_master_config_inst/wave_rom_address_1108_add_4_9/CO
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.8.0.115.3 -- WARNING: Map write only section -- Mon Dec 18 08:38:56 2017
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF ;
+LOCATE COMP "rst_n" SITE "L14" ;
+LOCATE COMP "sys_clk_12m" SITE "C1" ;
+LOCATE COMP "scl" SITE "C8" ;
+LOCATE COMP "sda" SITE "B8" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

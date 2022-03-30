@@ -1,0 +1,51 @@
+---------------------------------------------------
+Report for cell i2c_master
+   Instance path: i2c_master
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     129.00        100.0
+                                  LUT4	     182.00        100.0
+                                 IOBUF	          4        100.0
+                                PFUREG	         89        100.0
+                                RIPPLE	         37        100.0
+                                   EBR	          1        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     i2c_master_config	          1        71.0
+                          rom_waveform	          1         0.0
+                               clk_div	          1        28.6
+---------------------------------------------------
+Report for cell i2c_master_config
+   Instance path: i2c_master/i2c_master_config_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      91.58        71.0
+                                  LUT4	     168.00        92.3
+                                PFUREG	         56        62.9
+                                RIPPLE	          5        13.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                      i2c_master_logic	          1        64.9
+---------------------------------------------------
+Report for cell i2c_master_logic
+   Instance path: i2c_master/i2c_master_config_inst/i2c_master_logic_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      83.75        64.9
+                                  LUT4	     168.00        92.3
+                                PFUREG	         39        43.8
+---------------------------------------------------
+Report for cell clk_div
+   Instance path: i2c_master/clk_div_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      36.92        28.6
+                                  LUT4	      13.00         7.1
+                                PFUREG	         33        37.1
+                                RIPPLE	         32        86.5
+---------------------------------------------------
+Report for cell rom_waveform
+   Instance path: i2c_master/rom_waveform_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        100.0

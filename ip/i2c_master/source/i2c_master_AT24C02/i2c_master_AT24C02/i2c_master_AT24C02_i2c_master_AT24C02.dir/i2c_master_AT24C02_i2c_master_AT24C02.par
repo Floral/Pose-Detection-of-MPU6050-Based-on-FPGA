@@ -1,0 +1,28 @@
+PAR: Place And Route Diamond (64-bit) 3.8.0.115.3.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Dec 16 18:09:41 2017
+
+E:/lscc/diamond/3.8_x64/ispfpga\bin\nt64\par -f
+i2c_master_AT24C02_i2c_master_AT24C02.p2t
+i2c_master_AT24C02_i2c_master_AT24C02_map.ncd
+i2c_master_AT24C02_i2c_master_AT24C02.dir
+i2c_master_AT24C02_i2c_master_AT24C02.prf -gui
+
+
+Preference file: i2c_master_AT24C02_i2c_master_AT24C02.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -            -            -            -            06           Complete
+
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 6 secs 
+
+par done!

@@ -1,0 +1,6 @@
+clk_div.v,verilog,xil_defaultlib,../../../../Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/keyboard_0/src/clk_div.v,
+debounce.v,verilog,xil_defaultlib,../../../../Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/keyboard_0/src/debounce.v,
+key_scan.v,verilog,xil_defaultlib,../../../../Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/keyboard_0/src/key_scan.v,
+keyboard_top.v,verilog,xil_defaultlib,../../../../Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/keyboard_0/src/keyboard_top.v,
+keyboard_0.v,verilog,xil_defaultlib,../../../../Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/keyboard_0/sim/keyboard_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

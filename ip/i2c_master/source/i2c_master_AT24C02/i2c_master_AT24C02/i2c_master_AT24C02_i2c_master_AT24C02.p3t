@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "i2c_master_AT24C02_i2c_master_AT24C02.log"
+-o "i2c_master_AT24C02_i2c_master_AT24C02.csv"
+-pr "i2c_master_AT24C02_i2c_master_AT24C02.prf"

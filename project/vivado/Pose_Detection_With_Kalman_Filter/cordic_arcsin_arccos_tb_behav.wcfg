@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Kalman_Calculate_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Kalman_Calculate_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="47.299 ns"></ZoomEndTime>
+      <Cursor1Time time="377.028 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="248"></NameColumnWidth>
+      <ValueColumnWidth column_width="109"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/clk_in" type="logic">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/angle_out_rdy" type="logic">
+      <obj_property name="ElementShortName">angle_out_rdy</obj_property>
+      <obj_property name="ObjectShortName">angle_out_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_x_bias_in" type="array">
+      <obj_property name="ElementShortName">gyro_x_bias_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_x_bias_in[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_y_bias_in" type="array">
+      <obj_property name="ElementShortName">gyro_y_bias_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_y_bias_in[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_z_bias_in" type="array">
+      <obj_property name="ElementShortName">gyro_z_bias_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_z_bias_in[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_x_in" type="array">
+      <obj_property name="ElementShortName">gyro_x_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_x_in[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_y_in" type="array">
+      <obj_property name="ElementShortName">gyro_y_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_y_in[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_z_in" type="array">
+      <obj_property name="ElementShortName">gyro_z_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_z_in[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/acc_rdy_pos_in" type="logic">
+      <obj_property name="ElementShortName">acc_rdy_pos_in</obj_property>
+      <obj_property name="ObjectShortName">acc_rdy_pos_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_rdy_pos_in" type="logic">
+      <obj_property name="ElementShortName">gyro_rdy_pos_in</obj_property>
+      <obj_property name="ObjectShortName">gyro_rdy_pos_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/calc_en" type="logic">
+      <obj_property name="ElementShortName">calc_en</obj_property>
+      <obj_property name="ObjectShortName">calc_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/calc_g_en" type="logic">
+      <obj_property name="ElementShortName">calc_g_en</obj_property>
+      <obj_property name="ObjectShortName">calc_g_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_x_rect" type="array">
+      <obj_property name="ElementShortName">gyro_x_rect[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_x_rect[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_y_rect" type="array">
+      <obj_property name="ElementShortName">gyro_y_rect[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_y_rect[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_z_rect" type="array">
+      <obj_property name="ElementShortName">gyro_z_rect[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_z_rect[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_x_fp" type="array">
+      <obj_property name="ElementShortName">gyro_x_fp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_x_fp[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_y_fp" type="array">
+      <obj_property name="ElementShortName">gyro_y_fp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_y_fp[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_z_fp" type="array">
+      <obj_property name="ElementShortName">gyro_z_fp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_z_fp[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_x_rect_fp" type="array">
+      <obj_property name="ElementShortName">gyro_x_rect_fp[49:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_x_rect_fp[49:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_y_rect_fp" type="array">
+      <obj_property name="ElementShortName">gyro_y_rect_fp[49:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_y_rect_fp[49:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_z_rect_fp" type="array">
+      <obj_property name="ElementShortName">gyro_z_rect_fp[49:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_z_rect_fp[49:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_x_fp_temp" type="array">
+      <obj_property name="ElementShortName">gyro_x_fp_temp[49:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_x_fp_temp[49:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_y_fp_temp" type="array">
+      <obj_property name="ElementShortName">gyro_y_fp_temp[49:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_y_fp_temp[49:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_z_fp_temp" type="array">
+      <obj_property name="ElementShortName">gyro_z_fp_temp[49:0]</obj_property>
+      <obj_property name="ObjectShortName">gyro_z_fp_temp[49:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/gyro_fp_rdy" type="logic">
+      <obj_property name="ElementShortName">gyro_fp_rdy</obj_property>
+      <obj_property name="ObjectShortName">gyro_fp_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Kalman_Calculate_tb/U_KALMAN_CALCULATE_0/i" type="array">
+      <obj_property name="ElementShortName">i[2:0]</obj_property>
+      <obj_property name="ObjectShortName">i[2:0]</obj_property>
+   </wvobject>
+</wave_config>

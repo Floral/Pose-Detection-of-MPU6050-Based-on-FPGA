@@ -1,0 +1,342 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.8.0.115.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Dec 15 20:40:39 2017
+
+
+Command Line:  synthesis -f i2c_master_i2c_master_lattice.synproj -gui -msgset C:/Users/22822/Desktop/2/i2c_master_SHT20/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+Optimization goal = Balanced
+Top-level module name = i2c_master.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/22822/Desktop/2/i2c_master_SHT20 (searchpath added)
+-p E:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/22822/Desktop/2/i2c_master_SHT20/i2c_master (searchpath added)
+-p C:/Users/22822/Desktop/2/i2c_master_SHT20 (searchpath added)
+Verilog design file = C:/Users/22822/Desktop/2/i2c_master_SHT20/clk_div.v
+Verilog design file = C:/Users/22822/Desktop/2/i2c_master_SHT20/i2c_master.v
+Verilog design file = C:/Users/22822/Desktop/2/i2c_master_SHT20/i2c_master_config.v
+Verilog design file = C:/Users/22822/Desktop/2/i2c_master_SHT20/i2c_master_logic.v
+NGD file = i2c_master_i2c_master.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file E:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/22822/desktop/2/i2c_master_sht20/clk_div.v. VERI-1482
+Analyzing Verilog file c:/users/22822/desktop/2/i2c_master_sht20/i2c_master.v. VERI-1482
+Analyzing Verilog file c:/users/22822/desktop/2/i2c_master_sht20/i2c_master_config.v. VERI-1482
+Analyzing Verilog file c:/users/22822/desktop/2/i2c_master_sht20/i2c_master_logic.v. VERI-1482
+Analyzing Verilog file E:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): i2c_master
+INFO - synthesis: c:/users/22822/desktop/2/i2c_master_sht20/i2c_master.v(2): compiling module i2c_master. VERI-1018
+INFO - synthesis: c:/users/22822/desktop/2/i2c_master_sht20/clk_div.v(18): compiling module clk_div. VERI-1018
+INFO - synthesis: c:/users/22822/desktop/2/i2c_master_sht20/i2c_master_config.v(1): compiling module i2c_master_config. VERI-1018
+INFO - synthesis: c:/users/22822/desktop/2/i2c_master_sht20/i2c_master_logic.v(1): compiling module i2c_master_logic. VERI-1018
+Loading NGL library 'E:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'E:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/lscc/diamond/3.8_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: E:/lscc/diamond/3.8_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = i2c_master.
+INFO - synthesis: Extracted state machine for register '\i2c_master_config_inst/i2c_state' with one-hot encoding
+State machine has 16 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+ 1001 
+
+ 1010 
+
+ 1011 
+
+ 1100 
+
+ 1101 
+
+ 1110 
+
+ 1111 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0000000000000001
+
+ 0001 -> 0000000000000010
+
+ 0010 -> 0000000000000100
+
+ 0011 -> 0000000000001000
+
+ 0100 -> 0000000000010000
+
+ 0101 -> 0000000000100000
+
+ 0110 -> 0000000001000000
+
+ 0111 -> 0000000010000000
+
+ 1000 -> 0000000100000000
+
+ 1001 -> 0000001000000000
+
+ 1010 -> 0000010000000000
+
+ 1011 -> 0000100000000000
+
+ 1100 -> 0001000000000000
+
+ 1101 -> 0010000000000000
+
+ 1110 -> 0100000000000000
+
+ 1111 -> 1000000000000000
+
+
+
+
+WARNING - synthesis: Bit 0 of Register \i2c_master_config_inst/i2c_config is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \i2c_master_config_inst/i2c_config is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \i2c_master_config_inst/i2c_config is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \i2c_master_config_inst/i2c_config is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \i2c_master_config_inst/i2c_config is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \i2c_master_config_inst/i2c_master_logic_inst/state_current_ is stuck at Zero
+WARNING - synthesis: c:/users/22822/desktop/2/i2c_master_sht20/i2c_master_config.v(95): Register \i2c_master_config_inst/i2c_dev_addr_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/22822/desktop/2/i2c_master_sht20/i2c_master_config.v(70): Register \i2c_master_config_inst/i2c_state_FSM_i4 is stuck at Zero. VDB-5013
+GSR instance connected to net rst_n_c.
+WARNING - synthesis: Initial value found on instance \i2c_master_config_inst/i2c_master_logic_inst/sda_ctl_511 will be ignored.
+Duplicate register/latch removal. \i2c_master_config_inst/i2c_reg_data_i0 is a one-to-one match with \i2c_master_config_inst/i2c_reg_data_i7.
+Duplicate register/latch removal. \i2c_master_config_inst/i2c_reg_data_i6 is a one-to-one match with \i2c_master_config_inst/i2c_reg_data_i0.
+Duplicate register/latch removal. \i2c_master_config_inst/i2c_reg_data_i5 is a one-to-one match with \i2c_master_config_inst/i2c_reg_data_i6.
+Duplicate register/latch removal. \i2c_master_config_inst/i2c_reg_data_i4 is a one-to-one match with \i2c_master_config_inst/i2c_reg_data_i5.
+Duplicate register/latch removal. \i2c_master_config_inst/i2c_reg_data_i1 is a one-to-one match with \i2c_master_config_inst/i2c_reg_data_i4.
+Applying 1.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in i2c_master_drc.log.
+Loading NGL library 'E:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'E:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/lscc/diamond/3.8_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file i2c_master_i2c_master.ngd.
+
+################### Begin Area Report (i2c_master)######################
+Number of register bits => 107 of 4635 (2 % )
+BB => 1
+CCU2D => 32
+FD1P3AX => 2
+FD1P3AY => 3
+FD1P3IX => 47
+FD1S3AX => 6
+FD1S3AY => 1
+FD1S3IX => 48
+GSR => 1
+IB => 2
+L6MUX21 => 2
+LUT4 => 510
+OB => 1
+PFUMX => 27
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 3
+  Net : clk_div_inst/clk_div_100k, loads : 67
+  Net : sys_clk_12m_c, loads : 38
+  Net : i2c_master_config_inst/i2c_done_N_108, loads : 3
+Clock Enable Nets
+Number of Clock Enables: 18
+Top 10 highest fanout Clock Enables:
+  Net : i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_48, loads : 28
+  Net : i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_38, loads : 4
+  Net : i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_39, loads : 4
+  Net : i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_32, loads : 4
+  Net : i2c_master_config_inst/i2c_config_7__N_104, loads : 4
+  Net : i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_34, loads : 4
+  Net : i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_33, loads : 4
+  Net : i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_23, loads : 4
+  Net : i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_22, loads : 4
+  Net : i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_36, loads : 3
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : i2c_master_config_inst/i2c_master_logic_inst/state_current_0, loads : 67
+  Net : i2c_master_config_inst/i2c_master_logic_inst/state_current_4, loads : 40
+  Net : i2c_master_config_inst/i2c_master_logic_inst/state_current_2, loads : 37
+  Net : i2c_master_config_inst/i2c_master_logic_inst/state_current_5, loads : 33
+  Net : clk_div_inst/n4927, loads : 32
+  Net : i2c_master_config_inst/i2c_master_logic_inst/state_current_8, loads : 32
+  Net : i2c_master_config_inst/i2c_master_logic_inst/state_current_7, loads : 30
+  Net : i2c_master_config_inst/i2c_master_logic_inst/state_current_13, loads : 29
+  Net : i2c_master_config_inst/i2c_master_logic_inst/state_current_9, loads : 29
+  Net : i2c_master_config_inst/i2c_master_logic_inst/state_current_1, loads : 28
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk2 [get_nets clk_div_100k]            |    1.000 MHz|   57.624 MHz|    11  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk1 [get_nets                          |             |             |
+\i2c_master_config_inst/i2c_done_N_108] |    1.000 MHz|  484.027 MHz|     1  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets sys_clk_12m_c]           |    1.000 MHz|   98.164 MHz|     6  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 73.066  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 3.625  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

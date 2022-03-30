@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1513418992"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1513418997"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1513418981">
+            <Task name="Map" build_result="2" update_result="0" update_time="1513418981"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1513418987">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1513418987"/>
+            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1513418717">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1513418717"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1513418717"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1513418707"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/i2c_master_AT24C02_i2c_master_AT24C02_map.vdb" last_build_time="1513418981" last_build_size="165744"/>
+        <Report name="i2c_master_AT24C02_i2c_master_AT24C02.bgn" last_build_time="1513418997" last_build_size="4161"/>
+        <Report name="i2c_master_AT24C02_i2c_master_AT24C02.bit" last_build_time="1513418991" last_build_size="20500"/>
+        <Report name="i2c_master_AT24C02_i2c_master_AT24C02.jed" last_build_time="1513418997" last_build_size="849474"/>
+        <Report name="i2c_master_AT24C02_i2c_master_AT24C02.lsedata" last_build_time="1513418713" last_build_size="958763"/>
+        <Report name="i2c_master_AT24C02_i2c_master_AT24C02.ncd" last_build_time="1513418987" last_build_size="450977"/>
+        <Report name="i2c_master_AT24C02_i2c_master_AT24C02.ngd" last_build_time="1513418717" last_build_size="322130"/>
+        <Report name="i2c_master_AT24C02_i2c_master_AT24C02_map.ncd" last_build_time="1513418980" last_build_size="318461"/>
+    </Strategy>
+</BuildStatus>

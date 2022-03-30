@@ -1,0 +1,21 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2021.2                 C:/Software/Xilinx/Vivado/2021.2
+Matlab 9.11.0.1769968 (R2021b)          C:\Software\MATLAB\R2021b
+Vivado 2021.2                           C:/Software/Xilinx/Vivado/2021.2
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal Parameterization 
+     Block: 'getRollAndPitch/SquareRoot2'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'getRollAndPitch/SquareRoot2'
+
+Details:
+This block supports only Floating-point data-type at a/b ports.
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------

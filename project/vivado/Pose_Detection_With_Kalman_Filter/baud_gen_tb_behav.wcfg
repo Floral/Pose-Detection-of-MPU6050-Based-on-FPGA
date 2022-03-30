@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="baud_gen_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="baud_gen_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="166.800001 us"></ZoomEndTime>
+      <Cursor1Time time="84.400000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="280"></NameColumnWidth>
+      <ValueColumnWidth column_width="104"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/baud_gen_tb/clk_in" type="logic">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/baud_gen_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/baud_gen_tb/bps_clk_en" type="logic">
+      <obj_property name="ElementShortName">bps_clk_en</obj_property>
+      <obj_property name="ObjectShortName">bps_clk_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/baud_gen_tb/integerv" type="logic">
+      <obj_property name="ElementShortName">integerv</obj_property>
+      <obj_property name="ObjectShortName">integerv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/baud_gen_tb/bps_clk" type="logic">
+      <obj_property name="ElementShortName">bps_clk</obj_property>
+      <obj_property name="ObjectShortName">bps_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/baud_gen_tb/CLK_FREQUENCE" type="array">
+      <obj_property name="ElementShortName">CLK_FREQUENCE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_FREQUENCE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/baud_gen_tb/BAUD_RATE" type="array">
+      <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/baud_gen_tb/OVERSAMPLING" type="array">
+      <obj_property name="ElementShortName">OVERSAMPLING[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OVERSAMPLING[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/baud_gen_tb/U_BAUD_GEN_0/BAUD_GEN_ACC_WIDTH" type="array">
+      <obj_property name="ElementShortName">BAUD_GEN_ACC_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAUD_GEN_ACC_WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

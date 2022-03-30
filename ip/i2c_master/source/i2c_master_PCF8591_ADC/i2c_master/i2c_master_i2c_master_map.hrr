@@ -1,0 +1,42 @@
+---------------------------------------------------
+Report for cell i2c_master
+   Instance path: i2c_master
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     155.00        100.0
+                                  LUT4	     245.00        100.0
+                                 IOBUF	         12        100.0
+                                PFUREG	         89        100.0
+                                RIPPLE	         32        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     i2c_master_config	          1        74.8
+                               clk_div	          1        24.7
+---------------------------------------------------
+Report for cell clk_div
+   Instance path: i2c_master/clk_div_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      38.33        24.7
+                                  LUT4	      13.00         5.3
+                                PFUREG	         33        37.1
+                                RIPPLE	         32        100.0
+---------------------------------------------------
+Report for cell i2c_master_config
+   Instance path: i2c_master/i2c_master_config_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     116.00        74.8
+                                  LUT4	     230.00        93.9
+                                PFUREG	         56        62.9
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                      i2c_master_logic	          1        74.3
+---------------------------------------------------
+Report for cell i2c_master_logic
+   Instance path: i2c_master/i2c_master_config_inst/i2c_master_logic_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     115.17        74.3
+                                  LUT4	     229.00        93.5
+                                PFUREG	         55        61.8

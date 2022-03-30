@@ -1,0 +1,10 @@
+#Start recording tcl command: 12/13/2017 17:57:32
+#Project Location: C:/Users/TEST/Desktop/i2c_master; Project name: i2c_master
+prj_project open "C:/Users/TEST/Desktop/i2c_master/i2c_master.ldf"
+prj_run Synthesis -impl i2c_master -task Lattice_Synthesis
+prj_run Export -impl i2c_master
+prj_run Synthesis -impl i2c_master -task Lattice_Synthesis
+prj_run Export -impl i2c_master
+prj_run Export -impl i2c_master
+prj_project save
+#Stop recording: 12/13/2017 20:06:48

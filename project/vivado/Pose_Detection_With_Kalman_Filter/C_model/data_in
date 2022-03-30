@@ -1,0 +1,151 @@
+AcX_Bias = 1352.91 | AcY_Bias = -370.36 | AcZ_Bias = -67.83 | GyX_Bias = -111.50 | GyY_Bias = -34.56 | GyZ_Bias = -44.18
+AcX = 1356 | AcY = -370 | AcZ = 16302 | GyX = -112 | GyY = -34 | GyZ = -44        
+Roll = 0.00 | Pitch = 0.00 | Yaw = 0.00
+AcX = 1362 | AcY = -374 | AcZ = 16332 | GyX = -111 | GyY = -35 | GyZ = -44
+Roll = 0.06 | Pitch = 0.04 | Yaw = 0.00
+AcX = 1338 | AcY = -362 | AcZ = 16328 | GyX = -112 | GyY = -34 | GyZ = -44
+Roll = 0.09 | Pitch = 0.02 | Yaw = 0.00
+AcX = 1360 | AcY = -370 | AcZ = 16324 | GyX = -111 | GyY = -34 | GyZ = -44
+Roll = 0.13 | Pitch = 0.05 | Yaw = 0.00
+AcX = 1336 | AcY = -384 | AcZ = 16306 | GyX = -111 | GyY = -34 | GyZ = -44
+Roll = 0.19 | Pitch = 0.04 | Yaw = 0.00
+AcX = 1352 | AcY = -372 | AcZ = 16318 | GyX = -111 | GyY = -35 | GyZ = -44
+Roll = 0.21 | Pitch = 0.05 | Yaw = 0.00
+AcX = 1350 | AcY = -386 | AcZ = 16320 | GyX = -111 | GyY = -35 | GyZ = -44
+Roll = 0.25 | Pitch = 0.06 | Yaw = 0.00
+AcX = 1356 | AcY = -368 | AcZ = 16318 | GyX = -112 | GyY = -35 | GyZ = -44
+Roll = 0.26 | Pitch = 0.07 | Yaw = 0.00
+AcX = 1346 | AcY = -366 | AcZ = 16338 | GyX = -111 | GyY = -35 | GyZ = -44
+Roll = 0.27 | Pitch = 0.08 | Yaw = 0.00
+AcX = 1350 | AcY = -386 | AcZ = 16316 | GyX = -109 | GyY = -35 | GyZ = -44
+Roll = 0.29 | Pitch = 0.08 | Yaw = 0.00
+AcX = 1352 | AcY = -368 | AcZ = 16292 | GyX = -111 | GyY = -34 | GyZ = -45
+Roll = 0.30 | Pitch = 0.08 | Yaw = 0.00
+AcX = 1344 | AcY = -376 | AcZ = 16314 | GyX = -111 | GyY = -34 | GyZ = -43
+Roll = 0.30 | Pitch = 0.08 | Yaw = 0.00
+AcX = 1352 | AcY = -360 | AcZ = 16292 | GyX = -111 | GyY = -34 | GyZ = -43
+Roll = 0.29 | Pitch = 0.08 | Yaw = 0.00
+AcX = 1352 | AcY = -356 | AcZ = 16310 | GyX = -112 | GyY = -35 | GyZ = -44
+Roll = 0.28 | Pitch = 0.08 | Yaw = 0.00
+AcX = 1336 | AcY = -376 | AcZ = 16300 | GyX = -111 | GyY = -34 | GyZ = -44
+Roll = 0.29 | Pitch = 0.07 | Yaw = 0.00
+AcX = 1344 | AcY = -362 | AcZ = 16280 | GyX = -111 | GyY = -35 | GyZ = -44
+Roll = 0.29 | Pitch = 0.07 | Yaw = 0.00
+AcX = 854 | AcY = 8 | AcZ = 16316 | GyX = -160 | GyY = -86 | GyZ = -1872
+Roll = -0.07 | Pitch = -0.40 | Yaw = -0.04
+AcX = 1608 | AcY = -686 | AcZ = 16878 | GyX = -42 | GyY = -1214 | GyZ = 655
+Roll = 0.32 | Pitch = -0.06 | Yaw = -0.03
+AcX = 3742 | AcY = -402 | AcZ = 17120 | GyX = -56 | GyY = -2396 | GyZ = 78
+Roll = 0.35 | Pitch = 2.07 | Yaw = -0.02
+AcX = 9472 | AcY = -604 | AcZ = 12792 | GyX = -424 | GyY = -2551 | GyZ = -361
+Roll = 0.56 | Pitch = 10.20 | Yaw = -0.03
+AcX = 13210 | AcY = -1018 | AcZ = 10046 | GyX = -1042 | GyY = -3878 | GyZ = -609
+Roll = 1.12 | Pitch = 20.76 | Yaw = -0.04
+AcX = 15920 | AcY = -846 | AcZ = 5482 | GyX = -425 | GyY = -3066 | GyZ = -156
+Roll = 1.36 | Pitch = 33.79 | Yaw = -0.04
+AcX = 17088 | AcY = -526 | AcZ = 350 | GyX = -526 | GyY = -2117 | GyZ = -72
+Roll = 1.22 | Pitch = 48.53 | Yaw = -0.05
+AcX = 17234 | AcY = -728 | AcZ = -1332 | GyX = -114 | GyY = -73 | GyZ = -44
+Roll = 1.32 | Pitch = 58.50 | Yaw = -0.05
+AcX = 17466 | AcY = -822 | AcZ = -1626 | GyX = 387 | GyY = 1487 | GyZ = -40
+Roll = 1.49 | Pitch = 65.53 | Yaw = -0.04
+AcX = 16368 | AcY = -642 | AcZ = 4358 | GyX = 5 | GyY = 2613 | GyZ = -26
+Roll = 1.44 | Pitch = 67.79 | Yaw = -0.04
+AcX = 13580 | AcY = -892 | AcZ = 8464 | GyX = 112 | GyY = 3950 | GyZ = 83
+Roll = 1.68 | Pitch = 64.47 | Yaw = -0.04
+AcX = 7790 | AcY = -88 | AcZ = 15314 | GyX = -216 | GyY = 4924 | GyZ = -230
+Roll = 1.04 | Pitch = 53.33 | Yaw = -0.05
+AcX = 1468 | AcY = -248 | AcZ = 16622 | GyX = -143 | GyY = 343 | GyZ = -309
+Roll = 0.73 | Pitch = 39.06 | Yaw = -0.05
+AcX = 680 | AcY = -404 | AcZ = 16406 | GyX = -154 | GyY = 1540 | GyZ = 85
+Roll = 0.64 | Pitch = 27.93 | Yaw = -0.05
+AcX = -5156 | AcY = -394 | AcZ = 15038 | GyX = -318 | GyY = 3743 | GyZ = 439
+Roll = 0.57 | Pitch = 14.19 | Yaw = -0.04
+AcX = -12336 | AcY = -610 | AcZ = 9236 | GyX = -662 | GyY = 5744 | GyZ = 363
+Roll = 0.71 | Pitch = -4.57 | Yaw = -0.03
+AcX = -16106 | AcY = -872 | AcZ = 508 | GyX = -185 | GyY = 980 | GyZ = 2
+Roll = 1.04 | Pitch = -26.95 | Yaw = -0.03
+AcX = -15688 | AcY = -666 | AcZ = 1292 | GyX = -129 | GyY = -21 | GyZ = -69
+Roll = 1.11 | Pitch = -42.71 | Yaw = -0.03
+AcX = -15678 | AcY = -652 | AcZ = 1372 | GyX = -76 | GyY = -45 | GyZ = -36
+Roll = 1.14 | Pitch = -54.15 | Yaw = -0.03
+AcX = -15726 | AcY = -706 | AcZ = 1976 | GyX = -196 | GyY = -1715 | GyZ = -44
+Roll = 1.22 | Pitch = -62.00 | Yaw = -0.03
+AcX = -14266 | AcY = -648 | AcZ = 6352 | GyX = 167 | GyY = -3557 | GyZ = -166
+Roll = 1.23 | Pitch = -63.59 | Yaw = -0.03
+AcX = -9976 | AcY = -632 | AcZ = 12292 | GyX = 411 | GyY = -4471 | GyZ = -595
+Roll = 1.23 | Pitch = -57.97 | Yaw = -0.04
+AcX = -688 | AcY = -578 | AcZ = 16044 | GyX = 112 | GyY = -5109 | GyZ = -1106
+Roll = 1.18 | Pitch = -44.35 | Yaw = -0.07
+AcX = 1368 | AcY = -380 | AcZ = 16302 | GyX = -110 | GyY = -58 | GyZ = -49
+Roll = 0.95 | Pitch = -32.33 | Yaw = -0.07
+AcX = 1370 | AcY = -378 | AcZ = 16322 | GyX = -111 | GyY = -34 | GyZ = -44
+Roll = 0.78 | Pitch = -23.55 | Yaw = -0.07
+AcX = 846 | AcY = -466 | AcZ = 16982 | GyX = -242 | GyY = -80 | GyZ = -422
+Roll = 0.74 | Pitch = -17.63 | Yaw = -0.08
+AcX = 2788 | AcY = -6828 | AcZ = 11746 | GyX = -6067 | GyY = -729 | GyZ = -66
+Roll = 8.19 | Pitch = -11.21 | Yaw = -0.08
+AcX = 3806 | AcY = -11828 | AcZ = 10442 | GyX = -4886 | GyY = -365 | GyZ = 410
+Roll = 18.58 | Pitch = -5.74 | Yaw = -0.07
+AcX = 696 | AcY = -15598 | AcZ = 4016 | GyX = -2316 | GyY = -426 | GyZ = 392
+Roll = 33.82 | Pitch = -4.82 | Yaw = -0.06
+AcX = 250 | AcY = -16874 | AcZ = 220 | GyX = -1524 | GyY = -389 | GyZ = -14
+Roll = 48.00 | Pitch = -4.53 | Yaw = -0.06
+AcX = 434 | AcY = -16878 | AcZ = 992 | GyX = -135 | GyY = -124 | GyZ = -63
+Roll = 58.13 | Pitch = -4.14 | Yaw = -0.06
+AcX = 448 | AcY = -16608 | AcZ = 52 | GyX = -383 | GyY = -37 | GyZ = -40
+Roll = 65.96 | Pitch = -3.86 | Yaw = -0.06
+AcX = 746 | AcY = -16836 | AcZ = -752 | GyX = 1202 | GyY = 246 | GyZ = -430
+Roll = 71.72 | Pitch = -3.36 | Yaw = -0.06
+AcX = 1150 | AcY = -14524 | AcZ = 6250 | GyX = 4278 | GyY = 163 | GyZ = -407
+Roll = 70.35 | Pitch = -2.62 | Yaw = -0.07
+AcX = 2394 | AcY = -10382 | AcZ = 12574 | GyX = 3858 | GyY = -245 | GyZ = -437
+Roll = 61.86 | Pitch = -0.90 | Yaw = -0.08
+AcX = 2870 | AcY = -4912 | AcZ = 16298 | GyX = 2177 | GyY = 654 | GyZ = -668
+Roll = 49.46 | Pitch = 0.77 | Yaw = -0.09
+AcX = 1666 | AcY = -2854 | AcZ = 16162 | GyX = 980 | GyY = 674 | GyZ = -249
+Roll = 38.55 | Pitch = 0.90 | Yaw = -0.10
+AcX = 1250 | AcY = -210 | AcZ = 17094 | GyX = 384 | GyY = -154 | GyZ = -15
+Roll = 28.08 | Pitch = 0.58 | Yaw = -0.10
+AcX = 562 | AcY = 1014 | AcZ = 18358 | GyX = 1528 | GyY = 449 | GyZ = -92
+Roll = 19.45 | Pitch = -0.20 | Yaw = -0.10
+AcX = -256 | AcY = 3886 | AcZ = 15082 | GyX = 3754 | GyY = 302 | GyZ = 193
+Roll = 10.14 | Pitch = -1.69 | Yaw = -0.09
+AcX = 462 | AcY = 9868 | AcZ = 12076 | GyX = 2077 | GyY = 710 | GyZ = 392
+Roll = -3.30 | Pitch = -2.06 | Yaw = -0.08
+AcX = 2012 | AcY = 12174 | AcZ = 8730 | GyX = 1881 | GyY = -483 | GyZ = 158
+Roll = -17.13 | Pitch = -0.82 | Yaw = -0.08
+AcX = 572 | AcY = 14122 | AcZ = 7520 | GyX = 798 | GyY = 419 | GyZ = -1071
+Roll = -29.23 | Pitch = -1.31 | Yaw = -0.10
+AcX = -420 | AcY = 14208 | AcZ = 6680 | GyX = 1093 | GyY = 155 | GyZ = -347
+Roll = -38.64 | Pitch = -2.63 | Yaw = -0.11
+AcX = -268 | AcY = 15374 | AcZ = 3818 | GyX = 1578 | GyY = -220 | GyZ = 167
+Roll = -48.37 | Pitch = -3.44 | Yaw = -0.11
+AcX = 630 | AcY = 15848 | AcZ = 1540 | GyX = 1131 | GyY = 21 | GyZ = 333
+Roll = -57.85 | Pitch = -3.17 | Yaw = -0.10
+AcX = 436 | AcY = 16078 | AcZ = -432 | GyX = 594 | GyY = -10 | GyZ = -41
+Roll = -65.53 | Pitch = -3.15 | Yaw = -0.10
+AcX = 758 | AcY = 16088 | AcZ = -878 | GyX = -407 | GyY = 173 | GyZ = -13
+Roll = -71.14 | Pitch = -2.83 | Yaw = -0.10
+AcX = 516 | AcY = 15984 | AcZ = 408 | GyX = -1523 | GyY = 103 | GyZ = 3
+Roll = -75.30 | Pitch = -2.83 | Yaw = -0.10
+AcX = 1210 | AcY = 14728 | AcZ = 4160 | GyX = -3261 | GyY = -583 | GyZ = -118
+Roll = -75.05 | Pitch = -2.19 | Yaw = -0.10
+AcX = 832 | AcY = 10220 | AcZ = 11528 | GyX = -4679 | GyY = -404 | GyZ = -403
+Roll = -66.25 | Pitch = -2.10 | Yaw = -0.10
+AcX = 978 | AcY = 5222 | AcZ = 15874 | GyX = -2990 | GyY = -241 | GyZ = -253
+Roll = -53.56 | Pitch = -1.85 | Yaw = -0.11
+AcX = 720 | AcY = 1306 | AcZ = 16596 | GyX = -1802 | GyY = -322 | GyZ = -330
+Roll = -40.60 | Pitch = -1.92 | Yaw = -0.12
+AcX = 1220 | AcY = -32 | AcZ = 16778 | GyX = -410 | GyY = -324 | GyZ = -100
+Roll = -29.87 | Pitch = -1.51 | Yaw = -0.12
+AcX = 1356 | AcY = -370 | AcZ = 16290 | GyX = -111 | GyY = -35 | GyZ = -41
+Roll = -21.72 | Pitch = -1.07 | Yaw = -0.12
+AcX = 1370 | AcY = -354 | AcZ = 16310 | GyX = -111 | GyY = -35 | GyZ = -44
+Roll = -15.78 | Pitch = -0.74 | Yaw = -0.12
+AcX = 1406 | AcY = -350 | AcZ = 16580 | GyX = -107 | GyY = -44 | GyZ = -44
+Roll = -11.46 | Pitch = -0.47 | Yaw = -0.12
+AcX = 1370 | AcY = -360 | AcZ = 16306 | GyX = -110 | GyY = -35 | GyZ = -44
+Roll = -8.29 | Pitch = -0.30 | Yaw = -0.12
+AcX = 1352 | AcY = -366 | AcZ = 16306 | GyX = -110 | GyY = -34 | GyZ = -44
+Roll = -5.98 | Pitch = -0.20 | Yaw = -0.12

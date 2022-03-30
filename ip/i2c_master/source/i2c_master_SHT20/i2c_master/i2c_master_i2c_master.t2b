@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/Users/22822/Desktop/2/i2c_master_SHT20"  

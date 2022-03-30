@@ -1,0 +1,65 @@
+----------------------------------------------------------------------
+Report for cell i2c_master.TECH
+Register bits:  107 of 4635 (2.309%)
+I/O cells:      4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 BB         1          100.0
+                              CCU2D        32          100.0
+                            FD1P3AX         2          100.0
+                            FD1P3AY         3          100.0
+                            FD1P3IX        47          100.0
+                            FD1S3AX         6          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3IX        48          100.0
+                                GSR         1          100.0
+                                 IB         2          100.0
+                            L6MUX21         2          100.0
+                               LUT4       510          100.0
+                                 OB         1          100.0
+                              PFUMX        27          100.0
+SUB MODULES
+                            clk_div         1
+                  i2c_master_config         1
+                   i2c_master_logic         1
+                              TOTAL       686
+----------------------------------------------------------------------
+Report for cell clk_div.v1
+Instance Path : clk_div_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        32          100.0
+                            FD1S3AX         1           16.7
+                            FD1S3IX        32           66.7
+                               LUT4        13            2.5
+                              TOTAL        78
+----------------------------------------------------------------------
+Report for cell i2c_master_config.v1
+Instance Path : i2c_master_config_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         2          100.0
+                            FD1P3AY         3          100.0
+                            FD1P3IX        47          100.0
+                            FD1S3AX         5           83.3
+                            FD1S3AY         1          100.0
+                            FD1S3IX        16           33.3
+                            L6MUX21         2          100.0
+                               LUT4       491           96.3
+                              PFUMX        26           96.3
+SUB MODULES
+                   i2c_master_logic         1
+                              TOTAL       594
+----------------------------------------------------------------------
+Report for cell i2c_master_logic.v1
+Instance Path : i2c_master_config_inst.i2c_master_logic_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AY         3          100.0
+                            FD1P3IX        47          100.0
+                            FD1S3AX         2           33.3
+                            FD1S3IX        14           29.2
+                            L6MUX21         2          100.0
+                               LUT4       488           95.7
+                              PFUMX        26           96.3
+                              TOTAL       582

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="data_packing_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="data_packing_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="189.500 ns"></ZoomStartTime>
+      <ZoomEndTime time="261.501 ns"></ZoomEndTime>
+      <Cursor1Time time="235.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="248"></NameColumnWidth>
+      <ValueColumnWidth column_width="89"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/clk_in" type="logic">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/angle_opt_in" type="array">
+      <obj_property name="ElementShortName">angle_opt_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">angle_opt_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/roll_opt_vld_in" type="logic">
+      <obj_property name="ElementShortName">roll_opt_vld_in</obj_property>
+      <obj_property name="ObjectShortName">roll_opt_vld_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/pitch_opt_vld_in" type="logic">
+      <obj_property name="ElementShortName">pitch_opt_vld_in</obj_property>
+      <obj_property name="ObjectShortName">pitch_opt_vld_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/tx_rdy_in" type="logic">
+      <obj_property name="ElementShortName">tx_rdy_in</obj_property>
+      <obj_property name="ObjectShortName">tx_rdy_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/frame_data_out" type="array">
+      <obj_property name="ElementShortName">frame_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/data_out_vld" type="logic">
+      <obj_property name="ElementShortName">data_out_vld</obj_property>
+      <obj_property name="ObjectShortName">data_out_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/state_current" type="array">
+      <obj_property name="ElementShortName">state_current[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_current[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/state_next" type="array">
+      <obj_property name="ElementShortName">state_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_next[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/angle_opt_int" type="array">
+      <obj_property name="ElementShortName">angle_opt_int[15:0]</obj_property>
+      <obj_property name="ObjectShortName">angle_opt_int[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/angle_opt_int_vld" type="logic">
+      <obj_property name="ElementShortName">angle_opt_int_vld</obj_property>
+      <obj_property name="ObjectShortName">angle_opt_int_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/roll_opt_int" type="array">
+      <obj_property name="ElementShortName">roll_opt_int[15:0]</obj_property>
+      <obj_property name="ObjectShortName">roll_opt_int[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/pitch_opt_int" type="array">
+      <obj_property name="ElementShortName">pitch_opt_int[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pitch_opt_int[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/byte_cnt" type="array">
+      <obj_property name="ElementShortName">byte_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/add_cnt" type="logic">
+      <obj_property name="ElementShortName">add_cnt</obj_property>
+      <obj_property name="ObjectShortName">add_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/end_cnt" type="logic">
+      <obj_property name="ElementShortName">end_cnt</obj_property>
+      <obj_property name="ObjectShortName">end_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/check_sum1" type="array">
+      <obj_property name="ElementShortName">check_sum1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">check_sum1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/check_sum2" type="array">
+      <obj_property name="ElementShortName">check_sum2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">check_sum2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/STATE_WAIT_ROLL" type="array">
+      <obj_property name="ElementShortName">STATE_WAIT_ROLL[3:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_WAIT_ROLL[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/STATE_WAIT_PITCH" type="array">
+      <obj_property name="ElementShortName">STATE_WAIT_PITCH[3:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_WAIT_PITCH[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/STATE_DATA_CONV" type="array">
+      <obj_property name="ElementShortName">STATE_DATA_CONV[3:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_DATA_CONV[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/STATE_SEND_FRAME" type="array">
+      <obj_property name="ElementShortName">STATE_SEND_FRAME[3:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_SEND_FRAME[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/CNT_MAX" type="array">
+      <obj_property name="ElementShortName">CNT_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CNT_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group294" type="group">
+      <obj_property name="label">data_convert</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/clk_in" type="logic">
+         <obj_property name="ElementShortName">clk_in</obj_property>
+         <obj_property name="ObjectShortName">clk_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/angle_opt_fp_in" type="array">
+         <obj_property name="ElementShortName">angle_opt_fp_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">angle_opt_fp_in[31:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/roll_opt_fp_vld_in" type="logic">
+         <obj_property name="ElementShortName">roll_opt_fp_vld_in</obj_property>
+         <obj_property name="ObjectShortName">roll_opt_fp_vld_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/pitch_opt_fp_vld_in" type="logic">
+         <obj_property name="ElementShortName">pitch_opt_fp_vld_in</obj_property>
+         <obj_property name="ObjectShortName">pitch_opt_fp_vld_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/angle_opt_int_out" type="array">
+         <obj_property name="ElementShortName">angle_opt_int_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">angle_opt_int_out[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/angle_opt_int_vld_out" type="logic">
+         <obj_property name="ElementShortName">angle_opt_int_vld_out</obj_property>
+         <obj_property name="ObjectShortName">angle_opt_int_vld_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/cnt" type="array">
+         <obj_property name="ElementShortName">cnt[1:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/conv_start" type="logic">
+         <obj_property name="ElementShortName">conv_start</obj_property>
+         <obj_property name="ObjectShortName">conv_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/end_cnt" type="logic">
+         <obj_property name="ElementShortName">end_cnt</obj_property>
+         <obj_property name="ObjectShortName">end_cnt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/angle_opt_int_vld" type="logic">
+         <obj_property name="ElementShortName">angle_opt_int_vld</obj_property>
+         <obj_property name="ObjectShortName">angle_opt_int_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/angle_opt_fp_temp" type="array">
+         <obj_property name="ElementShortName">angle_opt_fp_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">angle_opt_fp_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_packing_tb/U_DATA_PACKING_0/U_DATA_CONVERT_0/CNT_MAX" type="array">
+         <obj_property name="ElementShortName">CNT_MAX[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CNT_MAX[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
