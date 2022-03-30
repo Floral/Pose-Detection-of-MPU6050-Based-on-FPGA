@@ -52,6 +52,10 @@ debug过程中用到的脚本和记录的数据，其中`data_gen.py`是用来�
 
 > 本项目仅计算了ROLL和PITCH两个角度，没有计算YAW角，YAW默认为0。
 
+### 整体架构说明
+
+[基于FPGA的MPU6050姿态解算（1） | DOA's Blog (floral.github.io)](https://floral.github.io/2022/03/25/基于FPGA的MPU6050姿态解算（1）/)
+
 ### top信号说明
 
 ```verilog
