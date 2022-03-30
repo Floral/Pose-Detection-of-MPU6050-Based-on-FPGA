@@ -1,0 +1,46 @@
+##################################################
+#
+# For info on creating trigger state machines:
+#   1) In the main Vivado menu bar, select
+#      Window > Language Templates
+#   2) In the Templates window, select
+#      Debug > Trigger State Machine
+#   3) Refer to the entry 'Info' for an overview
+#      of the trigger state machine language.
+#
+# More information can be found in this document:
+#
+#   Vivado Design Suite User Guide: Programming
+#   and Debugging (UG908)
+#
+##################################################
+state wait_seq:
+	if (U_UART_WITH_FIFO_0/tx_data == 8'h53) then
+		goto state_0;
+	else
+		goto wait_seq;
+	endif
+
+
+state state_0:
+	if (U_UART_WITH_FIFO_0/tx_data == 8'hF7) then
+		goto state_1;
+	else
+		goto wait_seq;
+	endif
+
+state state_1:
+	if (U_UART_WITH_FIFO_0/tx_data == 8'h03) then
+		goto state_2;
+	else
+		goto wait_seq;
+	endif
+
+
+state state_2:
+	if (U_UART_WITH_FIFO_0/tx_data == 8'h07) then
+		trigger;
+	else
+		goto wait_seq;
+	endif
+

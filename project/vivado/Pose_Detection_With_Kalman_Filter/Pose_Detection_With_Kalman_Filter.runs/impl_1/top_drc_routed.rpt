@@ -1,0 +1,1421 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Fri Mar 25 17:42:16 2022
+| Host         : DESKTOP-DOA running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+| Design       : top
+| Device       : xc7a75tfgg484-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 274
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| DPIP-1    | Warning  | Input pipelining                                                  | 54         |
+| DPOP-1    | Warning  | PREG Output pipelining                                            | 12         |
+| DPOP-2    | Warning  | MREG Output pipelining                                            | 27         |
+| DPOR-1    | Warning  | Asynchronous load check                                           | 108        |
+| PDCN-1569 | Warning  | LUT equation term check                                           | 1          |
+| PDRC-153  | Warning  | Gated clock check                                                 | 1          |
+| REQP-1840 | Warning  | RAMB18 async control check                                        | 10         |
+| RTSTAT-10 | Warning  | No routable loads                                                 | 1          |
+| AVAL-4    | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 40         |
+| AVAL-5    | Advisory | enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND   | 20         |
++-----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__0 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__1 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__2 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#49 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_x_rect_20 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_x_rect_20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#50 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_x_rect_20 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_x_rect_20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#51 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_y_rect_20 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_y_rect_20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#52 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_y_rect_20 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_y_rect_20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#53 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_z_rect_20 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_z_rect_20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#54 Warning
+Input pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_z_rect_20 input u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_z_rect_20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__1 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__1 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__1 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__1 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__1 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__1 output u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__1 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__2 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__1 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__2 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__1 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__2 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__1 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__2 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__1 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__2 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__0 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__1 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__2 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#25 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_x_rect_20 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_x_rect_20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#26 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_y_rect_20 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_y_rect_20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#27 Warning
+MREG Output pipelining  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_z_rect_20 multiplier stage u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/acc_z_rect_20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOR-1#1 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[0]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#2 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[10]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#3 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[11]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#4 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[12]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#5 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[13]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#6 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[14]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#7 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[15]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#8 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[16]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#9 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[1]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#10 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[2]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#11 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[3]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#12 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[4]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#13 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[5]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#14 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[6]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#15 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[7]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#16 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[8]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#17 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[9]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#18 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp0__1 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_0_temp_reg[16]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#19 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[0]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#20 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[10]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#21 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[11]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#22 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[12]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#23 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[13]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#24 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[14]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#25 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[15]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#26 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[16]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#27 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[1]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#28 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[2]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#29 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[3]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#30 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[4]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#31 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[5]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#32 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[6]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#33 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[7]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#34 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[8]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#35 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[9]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#36 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp0__1 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_0_1_temp_reg[16]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#37 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[0]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#38 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[10]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#39 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[11]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#40 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[12]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#41 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[13]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#42 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[14]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#43 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[15]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#44 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[16]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#45 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[1]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#46 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[2]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#47 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[3]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#48 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[4]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#49 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[5]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#50 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[6]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#51 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[7]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#52 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[8]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#53 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[9]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#54 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp0__1 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_0_temp_reg[16]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#55 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[0]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#56 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[10]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#57 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[11]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#58 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[12]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#59 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[13]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#60 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[14]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#61 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[15]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#62 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[16]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#63 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[1]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#64 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[2]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#65 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[3]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#66 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[4]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#67 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[5]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#68 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[6]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#69 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[7]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#70 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[8]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#71 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[9]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#72 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp0__1 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/P_1_1_temp_reg[16]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#73 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[0]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#74 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[10]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#75 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[11]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#76 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[12]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#77 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[13]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#78 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[14]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#79 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[15]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#80 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[16]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#81 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[1]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#82 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[2]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#83 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[3]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#84 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[4]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#85 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[5]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#86 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[6]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#87 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[7]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#88 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[8]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#89 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[9]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#90 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp0__1 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/angle_temp_reg[16]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#91 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[0]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#92 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[10]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#93 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[11]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#94 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[12]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#95 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[13]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#96 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[14]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#97 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[15]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#98 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[16]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#99 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[1]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#100 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[2]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#101 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[3]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#102 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[4]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#103 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[5]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#104 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[6]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#105 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[7]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#106 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[8]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#107 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[9]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#108 Warning
+Asynchronous load check  
+DSP u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp0__1 output is connected to registers with an asynchronous reset (u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/bias_temp_reg[16]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A4)+((~A4)*(~A1)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net U_DATA_PACKING_0/state_next__0 is a gated clock net sourced by a combinational pin U_DATA_PACKING_0/state_next_reg[3]_i_2/O, cell U_DATA_PACKING_0/state_next_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_1) which is driven by a register (U_UART_WITH_FIFO_0/u_uart_tx_0/U_BAUD_GEN_0/acc_reg[32]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_1) which is driven by a register (U_UART_WITH_FIFO_0/u_uart_tx_0/state_current_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_1) which is driven by a register (U_UART_WITH_FIFO_0/u_uart_tx_0/state_current_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_1) which is driven by a register (U_UART_WITH_FIFO_0/u_uart_tx_0/state_current_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_1) which is driven by a register (U_UART_WITH_FIFO_0/u_uart_tx_0/state_current_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENBWREN (net: U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (U_DATA_PACKING_0/data_out_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[0] (net: U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ena) which is driven by a register (U_DATA_PACKING_0/data_out_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[1] (net: U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ena) which is driven by a register (U_DATA_PACKING_0/data_out_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[2] (net: U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ena) which is driven by a register (U_DATA_PACKING_0/data_out_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[3] (net: U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ena) which is driven by a register (U_DATA_PACKING_0/data_out_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+11 net(s) have no routable loads. The problem bus(es) and/or net(s) are U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid,
+U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i,
+U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0]
+U_UART_WITH_FIFO_0/u_fifo_sync_0_tx/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2:0].
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_multadd/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_multadd/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#7 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#8 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#9 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#10 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_quotient_collector/i_typical_case.i_addsub/i_vx5_sp3.i_casc_dsp48.i_lower_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#11 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_multadd/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#12 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#13 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_multadd/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#14 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#15 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#16 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#17 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#18 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#19 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#20 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_quotient_collector/i_typical_case.i_addsub/i_vx5_sp3.i_casc_dsp48.i_lower_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#21 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_multadd/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#22 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#23 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_multadd/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#24 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#25 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#26 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#27 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#28 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#29 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#30 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_quotient_collector/i_typical_case.i_addsub/i_vx5_sp3.i_casc_dsp48.i_lower_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#31 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_multadd/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#32 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#33 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_multadd/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#34 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#35 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#36 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#37 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#38 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#39 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_mult/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#40 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_quotient_collector/i_typical_case.i_addsub/i_vx5_sp3.i_casc_dsp48.i_lower_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#2 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#3 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#4 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#5 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_quotient_collector/i_typical_case.i_addsub/i_vx5_sp3.i_casc_dsp48.i_lower_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#6 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#7 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#8 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#9 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#10 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_quotient_collector/i_typical_case.i_addsub/i_vx5_sp3.i_casc_dsp48.i_lower_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#11 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#12 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#13 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#14 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#15 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_quotient_collector/i_typical_case.i_addsub/i_vx5_sp3.i_casc_dsp48.i_lower_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#16 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#17 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#18 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#19 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#20 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_quotient_collector/i_typical_case.i_addsub/i_vx5_sp3.i_casc_dsp48.i_lower_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="i2c_master" device="LCMXO2-4000HC-4MG132C" default_implementation="i2c_master">
+    <Options/>
+    <Implementation title="i2c_master" dir="i2c_master" description="i2c_master" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="i2c_master"/>
+        <Source name="clk_div.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="i2c_master.v" type="Verilog" type_short="Verilog">
+            <Options top_module="i2c_master"/>
+        </Source>
+        <Source name="i2c_master_config.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="i2c_master_logic.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="i2c_master/source/rom_waveform.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="i2c_master.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="i2c_master/i2c_master.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="i2c_master1.sty"/>
+</BaliProject>

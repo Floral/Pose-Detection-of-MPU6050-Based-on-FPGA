@@ -1,0 +1,889 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Documents/Xilinx_project/FPGA/MyIP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Software/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.cache/ip 
+Command: synth_design -top top -part xc7a75tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Device 21-403] Loading part xc7a75tfgg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 46232
+WARNING: [Synth 8-2611] redeclaration of ansi port calib_done is not allowed [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/Kalman_Filter.v:58]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Kalman_Update with formal parameter declaration list [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:52]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Kalman_Update with formal parameter declaration list [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:53]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Kalman_Update with formal parameter declaration list [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:54]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Kalman_Update with formal parameter declaration list [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:55]
+WARNING: [Synth 8-2611] redeclaration of ansi port i2c_read_data is not allowed [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:69]
+WARNING: [Synth 8-2611] redeclaration of ansi port i2c_ack is not allowed [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:133]
+WARNING: [Synth 8-2611] redeclaration of ansi port state_debug is not allowed [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:645]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1384.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/rtl/clk_div.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/rtl/clk_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'edge_detect' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/edge_detect.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detect' (2#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/edge_detect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_0' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/.Xil/Vivado-58456-DESKTOP-DOA/realtime/keyboard_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_0' (3#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/.Xil/Vivado-58456-DESKTOP-DOA/realtime/keyboard_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_digital_0' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/.Xil/Vivado-58456-DESKTOP-DOA/realtime/dynamic_digital_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_digital_0' (4#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/.Xil/Vivado-58456-DESKTOP-DOA/realtime/dynamic_digital_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mpu_read_timer' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/mpu_read_timer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mpu_read_timer' (5#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/mpu_read_timer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Kalman_Ctrl' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/Kalman_Ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Kalman_Ctrl' (6#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/Kalman_Ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'I2C_master' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/I2C_master.v:23]
+INFO: [Synth 8-6157] synthesizing module 'i2c_master_logic' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:396]
+INFO: [Synth 8-226] default block is never used [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:432]
+INFO: [Synth 8-226] default block is never used [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:468]
+INFO: [Synth 8-226] default block is never used [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:518]
+INFO: [Synth 8-226] default block is never used [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:555]
+WARNING: [Synth 8-6014] Unused sequential element write_done_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:649]
+WARNING: [Synth 8-6014] Unused sequential element read_done_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:650]
+WARNING: [Synth 8-7137] Register i2c_read_data_reg in module i2c_master_logic has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:557]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master_logic' (7#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/i2c_master_logic.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_master' (8#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/I2C_master.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Kalman_Filter' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/Kalman_Filter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Kalman_Calibration' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calibration.v:23]
+WARNING: [Synth 8-3848] Net temp_bias_out in module/entity Kalman_Calibration does not have driver. [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calibration.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'Kalman_Calibration' (9#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calibration.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Kalman_Calculate' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:1]
+INFO: [Synth 8-6157] synthesizing module 'square_root' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/.Xil/Vivado-58456-DESKTOP-DOA/realtime/square_root_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'square_root' (10#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/.Xil/Vivado-58456-DESKTOP-DOA/realtime/square_root_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'm_axis_dout_tdata' does not match port width (24) of module 'square_root' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:228]
+WARNING: [Synth 8-689] width (17) of port connection 'm_axis_dout_tdata' does not match port width (24) of module 'square_root' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:238]
+WARNING: [Synth 8-689] width (17) of port connection 'm_axis_dout_tdata' does not match port width (24) of module 'square_root' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:248]
+INFO: [Synth 8-6157] synthesizing module 'div_gen' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/.Xil/Vivado-58456-DESKTOP-DOA/realtime/div_gen_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'div_gen' (11#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/.Xil/Vivado-58456-DESKTOP-DOA/realtime/div_gen_stub.v:6]
+WARNING: [Synth 8-689] width (49) of port connection 'm_axis_dout_tdata' does not match port width (56) of module 'div_gen' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:264]
+WARNING: [Synth 8-7071] port 's_axis_divisor_tready' of module 'div_gen' is unconnected for instance 'u_div_gen_0' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:256]
+WARNING: [Synth 8-7071] port 's_axis_dividend_tready' of module 'div_gen' is unconnected for instance 'u_div_gen_0' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:256]
+WARNING: [Synth 8-7023] instance 'u_div_gen_0' of module 'div_gen' has 10 connections declared, but only 8 given [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:256]
+WARNING: [Synth 8-689] width (49) of port connection 'm_axis_dout_tdata' does not match port width (56) of module 'div_gen' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:275]
+WARNING: [Synth 8-7071] port 's_axis_divisor_tready' of module 'div_gen' is unconnected for instance 'u_div_gen_1' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:267]
+WARNING: [Synth 8-7071] port 's_axis_dividend_tready' of module 'div_gen' is unconnected for instance 'u_div_gen_1' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:267]
+WARNING: [Synth 8-7023] instance 'u_div_gen_1' of module 'div_gen' has 10 connections declared, but only 8 given [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:267]
+INFO: [Synth 8-6157] synthesizing module 'cordic_arcsin_arccos' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/cordic_arcsin_arccos.v:23]
+INFO: [Synth 8-3876] $readmem data file 'C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/C_model/atan.data' is read successfully [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/cordic_arcsin_arccos.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/cordic_arcsin_arccos.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_arcsin_arccos' (12#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/cordic_arcsin_arccos.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:339]
+INFO: [Synth 8-6157] synthesizing module 'Kalman_Iter_Unit' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Iter_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Kalman_Flow_Ctrl' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Flow_Ctrl.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Flow_Ctrl.v:245]
+WARNING: [Synth 8-6014] Unused sequential element gyro_x_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Flow_Ctrl.v:153]
+WARNING: [Synth 8-6014] Unused sequential element gyro_x_bias_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Flow_Ctrl.v:233]
+WARNING: [Synth 8-6014] Unused sequential element gyro_y_bias_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Flow_Ctrl.v:234]
+INFO: [Synth 8-6155] done synthesizing module 'Kalman_Flow_Ctrl' (13#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Flow_Ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Kalman_Forecast' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Forecast.v:23]
+	Parameter DELTA_T bound to: 12'b000000000101 
+	Parameter Q_ANGLE bound to: 66 - type: integer 
+	Parameter Q_BIAS bound to: 197 - type: integer 
+	Parameter CNT_MAX bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element bias_t_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Forecast.v:104]
+INFO: [Synth 8-6155] done synthesizing module 'Kalman_Forecast' (14#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Forecast.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Kalman_Update' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:23]
+	Parameter Q_NEW_ANGLE bound to: 1966 - type: integer 
+	Parameter CNT_MAX bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:170]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:239]
+WARNING: [Synth 8-689] width (49) of port connection 'm_axis_dout_tdata' does not match port width (56) of module 'div_gen' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:311]
+WARNING: [Synth 8-7071] port 's_axis_divisor_tready' of module 'div_gen' is unconnected for instance 'u_div_gen_2' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:303]
+WARNING: [Synth 8-7071] port 's_axis_dividend_tready' of module 'div_gen' is unconnected for instance 'u_div_gen_2' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:303]
+WARNING: [Synth 8-7023] instance 'u_div_gen_2' of module 'div_gen' has 10 connections declared, but only 8 given [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:303]
+WARNING: [Synth 8-689] width (49) of port connection 'm_axis_dout_tdata' does not match port width (56) of module 'div_gen' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:323]
+WARNING: [Synth 8-7071] port 's_axis_divisor_tready' of module 'div_gen' is unconnected for instance 'u_div_gen_3' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:315]
+WARNING: [Synth 8-7071] port 's_axis_dividend_tready' of module 'div_gen' is unconnected for instance 'u_div_gen_3' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:315]
+WARNING: [Synth 8-7023] instance 'u_div_gen_3' of module 'div_gen' has 10 connections declared, but only 8 given [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:315]
+WARNING: [Synth 8-6014] Unused sequential element state_current_1_ff_1_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:155]
+INFO: [Synth 8-6155] done synthesizing module 'Kalman_Update' (15#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Kalman_Iter_Unit' (16#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Iter_Unit.v:23]
+WARNING: [Synth 8-6014] Unused sequential element temp_rect_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:160]
+WARNING: [Synth 8-6014] Unused sequential element gyro_z_rect_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:163]
+WARNING: [Synth 8-6014] Unused sequential element gyro_z_rect_fp_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:332]
+WARNING: [Synth 8-6014] Unused sequential element gyro_z_fp_temp_reg was removed.  [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:335]
+INFO: [Synth 8-6155] done synthesizing module 'Kalman_Calculate' (17#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Calculate.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Kalman_Filter' (18#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/Kalman_Filter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_packing' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/data_packing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_convert' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/data_convert.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/data_convert.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'data_convert' (19#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/data_convert.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/data_packing.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'data_packing' (20#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/data_packing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_with_fifo' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/uart_with_fifo.v:23]
+	Parameter CLK_FREQUENCE bound to: 64'b0000000000000000000000000000000000000010111110101111000010000000 
+	Parameter BAUD_RATE bound to: 64'b0000000000000000000000000000000000000000000000011100001000000000 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_sync_0' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/.Xil/Vivado-58456-DESKTOP-DOA/realtime/fifo_sync_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_sync_0' (21#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/.Xil/Vivado-58456-DESKTOP-DOA/realtime/fifo_sync_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_sync_0' is unconnected for instance 'u_fifo_sync_0_tx' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/uart_with_fifo.v:57]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_sync_0' is unconnected for instance 'u_fifo_sync_0_tx' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/uart_with_fifo.v:57]
+WARNING: [Synth 8-7023] instance 'u_fifo_sync_0_tx' of module 'fifo_sync_0' has 10 connections declared, but only 8 given [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/uart_with_fifo.v:57]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/uart_tx.v:1]
+	Parameter CLK_FREQUENCE bound to: 64'b0000000000000000000000000000000000000010111110101111000010000000 
+	Parameter BAUD_RATE bound to: 64'b0000000000000000000000000000000000000000000000011100001000000000 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_gen' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/baud_gen.v:22]
+	Parameter CLK_FREQUENCE bound to: 64'b0000000000000000000000000000000000000010111110101111000010000000 
+	Parameter BAUD_RATE bound to: 64'b0000000000000000000000000000000000000000000000011100001000000000 
+INFO: [Synth 8-251] inc k: 9895605 [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/baud_gen.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'baud_gen' (22#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/baud_gen.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (23#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/uart_tx.v:1]
+WARNING: [Synth 8-3848] Net rx_data_out in module/entity uart_with_fifo does not have driver. [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/uart_with_fifo.v:39]
+WARNING: [Synth 8-3848] Net rx_data_vld in module/entity uart_with_fifo does not have driver. [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/uart_with_fifo.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'uart_with_fifo' (24#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/uart_with_fifo.v:23]
+WARNING: [Synth 8-7071] port 'rx_rdy' of module 'uart_with_fifo' is unconnected for instance 'U_UART_WITH_FIFO_0' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/top.v:266]
+WARNING: [Synth 8-7071] port 'rx_data_out' of module 'uart_with_fifo' is unconnected for instance 'U_UART_WITH_FIFO_0' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/top.v:266]
+WARNING: [Synth 8-7071] port 'rx_data_vld' of module 'uart_with_fifo' is unconnected for instance 'U_UART_WITH_FIFO_0' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/top.v:266]
+WARNING: [Synth 8-7023] instance 'U_UART_WITH_FIFO_0' of module 'uart_with_fifo' has 10 connections declared, but only 7 given [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/top.v:266]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_dynamic_digital_0'. This will prevent further optimization [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/top.v:148]
+INFO: [Synth 8-6155] done synthesizing module 'top' (25#1) [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/imports/Kalman/top.v:23]
+WARNING: [Synth 8-7129] Port rx_data_out[7] in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_data_out[6] in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_data_out[5] in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_data_out[4] in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_data_out[3] in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_data_out[2] in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_data_out[1] in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_data_out[0] in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_data_vld in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_rdy in module uart_with_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[15] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[14] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[13] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[12] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[11] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[10] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[9] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[8] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[7] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[6] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[5] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[4] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[3] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[2] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[1] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_in[0] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[15] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[14] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[13] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[12] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[11] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[10] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[9] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[8] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[7] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[6] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[5] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[4] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[3] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[2] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[1] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_bias_in[0] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[15] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[14] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[13] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[12] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[11] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[10] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[9] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[8] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[7] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[6] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[5] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[4] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[3] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[2] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[1] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[0] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[15] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[14] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[13] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[12] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[11] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[10] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[9] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[8] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[7] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[6] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[5] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[4] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[3] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[2] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[1] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gyro_z_in[0] in module Kalman_Calculate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[15] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[14] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[13] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[12] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[11] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[10] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[9] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[8] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[7] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[6] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[5] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[4] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[3] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[2] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[1] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_bias_out[0] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[15] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[14] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[13] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[12] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[11] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[10] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[9] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[8] in module Kalman_Calibration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port temp_in[7] in module Kalman_Calibration is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1384.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1384.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1384.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 1384.395 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/fifo_sync_0/fifo_sync_0/fifo_sync_0_in_context.xdc] for cell 'U_UART_WITH_FIFO_0/u_fifo_sync_0_tx'
+Finished Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/fifo_sync_0/fifo_sync_0/fifo_sync_0_in_context.xdc] for cell 'U_UART_WITH_FIFO_0/u_fifo_sync_0_tx'
+Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/div_gen/div_gen/div_gen_0_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2'
+Finished Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/div_gen/div_gen/div_gen_0_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2'
+Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/div_gen/div_gen/div_gen_0_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3'
+Finished Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/div_gen/div_gen/div_gen_0_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3'
+Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/div_gen/div_gen/div_gen_0_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0'
+Finished Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/div_gen/div_gen/div_gen_0_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0'
+Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/div_gen/div_gen/div_gen_0_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1'
+Finished Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/div_gen/div_gen/div_gen_0_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1'
+Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/dynamic_digital_0/dynamic_digital_0/dynamic_digital_0_in_context.xdc] for cell 'u_dynamic_digital_0'
+Finished Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/dynamic_digital_0/dynamic_digital_0/dynamic_digital_0_in_context.xdc] for cell 'u_dynamic_digital_0'
+Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/keyboard_0/keyboard_0/keyboard_0_in_context.xdc] for cell 'u_keyboard_0'
+Finished Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/keyboard_0/keyboard_0/keyboard_0_in_context.xdc] for cell 'u_keyboard_0'
+Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/square_root/square_root/square_root_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_0'
+Finished Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/square_root/square_root/square_root_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_0'
+Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/square_root/square_root/square_root_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_1'
+Finished Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/square_root/square_root/square_root_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_1'
+Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/square_root/square_root/square_root_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_2'
+Finished Parsing XDC File [c:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/square_root/square_root/square_root_in_context.xdc] for cell 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_2'
+Parsing XDC File [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/constrs_1/imports/new/top.xdc]
+Finished Parsing XDC File [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/constrs_1/imports/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/constrs_1/imports/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1463.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1463.500 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_0' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_1' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_2' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1469.676 ; gain = 85.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1469.676 ; gain = 85.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U_UART_WITH_FIFO_0/u_fifo_sync_0_tx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_div_gen_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/U_KALMAN_ITER_UNIT_0/U_KALMAN_UPDATE_0/u_div_gen_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_dynamic_digital_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_keyboard_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Kalman_Filter_0/U_KALMAN_CALCULATE_0/u_square_root_2. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1469.676 ; gain = 85.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_current_reg' in module 'Kalman_Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'i_reg' in module 'Kalman_Flow_Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_current_reg' in module 'Kalman_Flow_Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'i_reg' in module 'Kalman_Calculate'
+INFO: [Synth 8-802] inferred FSM for state register 'state_current_reg' in module 'data_packing'
+INFO: [Synth 8-802] inferred FSM for state register 'state_current_reg' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+             KALMAN_WAIT |                             0001 |                             0001
+           KALMAN_CONFIG |                             0010 |                             0010
+        KALMAN_CALIBRATE |                             0100 |                             0100
+        KALMAN_CALCULATE |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_current_reg' in module 'Kalman_Ctrl'
+WARNING: [Synth 8-327] inferring latch for variable 'sigma' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/cordic_arcsin_arccos.v:52]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                              000 |                              000
+                 iSTATE3 |                              001 |                              001
+                  iSTATE |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'i_reg' using encoding 'sequential' in module 'Kalman_Flow_Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                           000001 |                           000001
+            INITIAL_BIAS |                           000010 |                           000010
+           FORECAST_ROLL |                           000100 |                           000100
+             UPDATE_ROLL |                           001000 |                           001000
+          FORECAST_PITCH |                           010000 |                           010000
+            UPDATE_PITCH |                           100000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_current_reg' in module 'Kalman_Flow_Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                              000 |                              000
+                 iSTATE3 |                              001 |                              001
+                  iSTATE |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'i_reg' using encoding 'sequential' in module 'Kalman_Calculate'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+         STATE_WAIT_ROLL |                             0001 |                             0001
+        STATE_WAIT_PITCH |                             0010 |                             0010
+         STATE_DATA_CONV |                             0100 |                             0100
+        STATE_SEND_FRAME |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_current_reg' in module 'data_packing'
+WARNING: [Synth 8-327] inferring latch for variable 'state_next_reg' [C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/data_packing.v:86]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              STATE_IDLE |                             0001 |                             0001
+             STATE_START |                             0010 |                             0010
+              STATE_DATA |                             0100 |                             0100
+              STATE_STOP |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_current_reg' in module 'uart_tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1469.676 ; gain = 85.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input   50 Bit       Adders := 4     
+	   3 Input   33 Bit       Adders := 2     
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 18    
+	   3 Input   32 Bit       Adders := 16    
+	   3 Input   26 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 5     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    3 Bit       Adders := 11    
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 6     
+	               50 Bit    Registers := 8     
+	               44 Bit    Registers := 3     
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 61    
+	               26 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 7     
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 26    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 11    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 39    
++---Multipliers : 
+	              32x33  Multipliers := 2     
+	              32x32  Multipliers := 4     
+	               3x44  Multipliers := 3     
++---Muxes : 
+	   5 Input   50 Bit        Muxes := 22    
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 18    
+	  17 Input   32 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 6     
+	   6 Input   32 Bit        Muxes := 8     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 2     
+	   2 Input   14 Bit        Muxes := 16    
+	  13 Input   14 Bit        Muxes := 1     
+	   3 Input   14 Bit        Muxes := 5     
+	  10 Input   14 Bit        Muxes := 3     
+	  11 Input   14 Bit        Muxes := 2     
+	   8 Input   14 Bit        Muxes := 2     
+	  14 Input   14 Bit        Muxes := 2     
+	   4 Input   14 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   3 Input   11 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 5     
+	  17 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 4     
+	   6 Input    7 Bit        Muxes := 1     
+	   5 Input    7 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 2     
+	   8 Input    7 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 5     
+	   2 Input    6 Bit        Muxes := 4     
+	   7 Input    6 Bit        Muxes := 2     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   5 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 16    
+	   5 Input    4 Bit        Muxes := 6     
+	   3 Input    4 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 35    
+	   5 Input    3 Bit        Muxes := 3     
+	  17 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 66    
+	   5 Input    1 Bit        Muxes := 30    
+	   3 Input    1 Bit        Muxes := 10    
+	  17 Input    1 Bit        Muxes := 19    
+	   4 Input    1 Bit        Muxes := 19    
+	   7 Input    1 Bit        Muxes := 5     
+	  16 Input    1 Bit        Muxes := 8     
+	  15 Input    1 Bit        Muxes := 14    
+	   6 Input    1 Bit        Muxes := 6     
+	  14 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/angle_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/angle_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/angle_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/angle_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/angle_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/angle_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/angle_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/angle_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/angle_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/angle_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/angle_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/angle_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/angle_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/angle_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/angle_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/angle_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/angle_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/angle_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/angle_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/angle_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/bias_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/bias_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/bias_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/bias_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/bias_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/bias_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/bias_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/bias_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/bias_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/bias_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/bias_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/bias_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/bias_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/bias_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/bias_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/bias_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/bias_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/bias_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/bias_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/bias_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_0_0_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_0_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_0_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_0_0_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_0_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_0_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_0_0_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_0_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_0_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_0_0_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_0_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_0_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_0_1_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_1_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_1_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_0_1_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_1_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_1_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_0_1_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_1_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_1_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_0_1_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_1_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_0_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_0_1_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_1_0_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_0_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_0_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_1_0_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_0_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_0_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_1_0_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_0_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_0_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_1_0_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_0_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_0_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_0_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_1_1_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_1_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_1_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_1_1_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_1_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_1_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_1_1_temp0, operation Mode is: A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_1_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_1_temp0.
+DSP Report: Generating DSP U_KALMAN_UPDATE_0/P_1_1_temp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_1_temp0.
+DSP Report: operator U_KALMAN_UPDATE_0/P_1_1_temp0 is absorbed into DSP U_KALMAN_UPDATE_0/P_1_1_temp0.
+DSP Report: Generating DSP acc_y_rect_20, operation Mode is: A*B.
+DSP Report: operator acc_y_rect_20 is absorbed into DSP acc_y_rect_20.
+DSP Report: Generating DSP acc_z_rect_20, operation Mode is: A*B.
+DSP Report: operator acc_z_rect_20 is absorbed into DSP acc_z_rect_20.
+DSP Report: Generating DSP acc_x_rect_20, operation Mode is: A*B.
+DSP Report: operator acc_x_rect_20 is absorbed into DSP acc_x_rect_20.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[47]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[46]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[45]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[44]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[43]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[42]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[41]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[40]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[39]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[38]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[37]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[36]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[35]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[34]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[33]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[32]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[31]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[30]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[29]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[28]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[27]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[26]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[25]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[24]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[23]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[22]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[21]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[20]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[19]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[18]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[17]) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[47]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[46]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[45]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[44]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[43]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[42]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[41]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[40]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[39]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[38]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[37]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[36]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[35]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[34]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[33]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[32]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[31]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[30]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[29]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[28]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[27]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[26]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[25]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[24]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[23]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[22]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[21]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[20]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[19]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[18]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[17]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[16]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[15]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[14]__0) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[47]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[46]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[45]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[44]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[43]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[42]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[41]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[40]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[39]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[38]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[37]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[36]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[35]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[34]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[33]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[32]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[31]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[30]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[29]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[28]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[27]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[26]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[25]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[24]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[23]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[22]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[21]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[20]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[19]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[18]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[17]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[15]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[14]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[13]__1) is unused and will be removed from module Kalman_Iter_Unit.
+WARNING: [Synth 8-3332] Sequential element (U_KALMAN_UPDATE_0/angle_temp_reg[12]__1) is unused and will be removed from module Kalman_Iter_Unit.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1469.676 ; gain = 85.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Kalman_Iter_Unit | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Iter_Unit | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Calculate | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Calculate | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Kalman_Calculate | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1469.676 ; gain = 85.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1478.535 ; gain = 94.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1544.293 ; gain = 159.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 1558.941 ; gain = 174.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 1558.941 ; gain = 174.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1558.941 ; gain = 174.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1558.941 ; gain = 174.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1558.941 ; gain = 174.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1558.941 ; gain = 174.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |keyboard_0        |         1|
+|2     |dynamic_digital_0 |         1|
+|3     |fifo_sync_0       |         1|
+|4     |square_root       |         3|
+|5     |div_gen           |         4|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |div_gen         |     4|
+|5     |dynamic_digital |     1|
+|6     |fifo_sync       |     1|
+|7     |keyboard        |     1|
+|8     |square_root     |     3|
+|11    |BUFG            |     3|
+|12    |CARRY4          |   506|
+|13    |DSP48E1         |    27|
+|15    |LUT1            |    47|
+|16    |LUT2            |  1214|
+|17    |LUT3            |  1423|
+|18    |LUT4            |   669|
+|19    |LUT5            |   858|
+|20    |LUT6            |  1447|
+|21    |MUXF7           |     5|
+|22    |FDCE            |  2973|
+|23    |FDPE            |    25|
+|24    |FDRE            |     9|
+|25    |LD              |     6|
+|26    |IBUF            |     6|
+|27    |IOBUF           |     1|
+|28    |OBUF            |    20|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1558.941 ; gain = 174.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 860 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 1558.941 ; gain = 89.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1558.941 ; gain = 174.547
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1570.957 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 545 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1574.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  LD => LDCE: 4 instances
+  LD => LDCE (inverted pins: G): 2 instances
+
+Synth Design complete, checksum: 65b95441
+INFO: [Common 17-83] Releasing license: Synthesis
+97 Infos, 260 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1574.668 ; gain = 190.273
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 25 17:40:22 2022...

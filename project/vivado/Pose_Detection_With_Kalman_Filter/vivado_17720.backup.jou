@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Feb 21 10:51:33 2022
+# Process ID: 17720
+# Current directory: C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6672 C:\Documents\Xilinx_project\FPGA\Pose_Detection_With_Kalman_Filter\Pose_Detection_With_Kalman_Filter.xpr
+# Log file: C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/vivado.log
+# Journal file: C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter\vivado.jou
+# Running On: DESKTOP-DOA, OS: Windows, CPU Frequency: 3800 MHz, CPU Physical cores: 16, Host memory: 34282 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.xpr

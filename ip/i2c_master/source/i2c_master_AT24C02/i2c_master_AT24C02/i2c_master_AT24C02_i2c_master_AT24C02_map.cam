@@ -1,0 +1,64 @@
+[ START MERGED ]
+n3731 i2c_master_config_inst/i2c_master_logic_inst/sda_ctl
+i2c_master_config_inst/sys_clk_12m_c_enable_9 i2c_master_config_inst/i2c_state_1__N_115
+i2c_master_config_inst/n3942 i2c_master_config_inst/i2c_config_2
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+n10715
+VCC_net
+clk_div_inst/add_6448_24/S1
+clk_div_inst/add_6448_24/S0
+clk_div_inst/add_6448_26/S1
+clk_div_inst/add_6448_26/S0
+clk_div_inst/add_6448_28/S1
+clk_div_inst/add_6448_28/S0
+clk_div_inst/add_6448_30/S0
+clk_div_inst/add_6448_30/CO
+clk_div_inst/cnt_p_1193_add_4_1/S0
+clk_div_inst/cnt_p_1193_add_4_1/CI
+clk_div_inst/cnt_p_1193_add_4_33/S1
+clk_div_inst/cnt_p_1193_add_4_33/CO
+clk_div_inst/add_6448_2/S1
+clk_div_inst/add_6448_2/S0
+clk_div_inst/add_6448_2/CI
+clk_div_inst/add_6448_4/S1
+clk_div_inst/add_6448_4/S0
+clk_div_inst/add_6448_6/S1
+clk_div_inst/add_6448_6/S0
+clk_div_inst/add_6448_8/S1
+clk_div_inst/add_6448_8/S0
+clk_div_inst/add_6448_10/S1
+clk_div_inst/add_6448_10/S0
+clk_div_inst/add_6448_12/S1
+clk_div_inst/add_6448_12/S0
+clk_div_inst/add_6448_14/S1
+clk_div_inst/add_6448_14/S0
+clk_div_inst/add_6448_16/S1
+clk_div_inst/add_6448_16/S0
+clk_div_inst/add_6448_18/S1
+clk_div_inst/add_6448_18/S0
+clk_div_inst/add_6448_20/S1
+clk_div_inst/add_6448_20/S0
+clk_div_inst/add_6448_22/S1
+clk_div_inst/add_6448_22/S0
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.8.0.115.3 -- WARNING: Map write only section -- Sat Dec 16 18:09:40 2017
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF ;
+LOCATE COMP "at24c02_00_data[4]" SITE "P11" ;
+LOCATE COMP "at24c02_00_data[5]" SITE "N10" ;
+LOCATE COMP "at24c02_00_data[6]" SITE "N9" ;
+LOCATE COMP "at24c02_00_data[7]" SITE "P9" ;
+LOCATE COMP "scl" SITE "C8" ;
+LOCATE COMP "sda" SITE "B8" ;
+LOCATE COMP "at24c02_00_data[3]" SITE "M11" ;
+LOCATE COMP "at24c02_00_data[2]" SITE "P12" ;
+LOCATE COMP "at24c02_00_data[1]" SITE "M12" ;
+LOCATE COMP "at24c02_00_data[0]" SITE "N13" ;
+LOCATE COMP "sys_clk_12m" SITE "C1" ;
+LOCATE COMP "rst_n" SITE "L14" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

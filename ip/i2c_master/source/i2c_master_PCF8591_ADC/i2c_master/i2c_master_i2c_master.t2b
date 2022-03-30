@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/Users/22822/Desktop/2/source/i2c_master_PCF8591_ADC"  

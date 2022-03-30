@@ -1,0 +1,441 @@
+(edif rom_waveform
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2017 12 15 14 28 33)
+      (program "SCUBA" (version "Diamond (64-bit) 3.8.0.115.3"))))
+      (comment "E:\lscc\diamond\3.8_x64\ispfpga\bin\nt64\scuba.exe -w -n rom_waveform -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type bram -wp 00 -rp 1100 -addr_width 8 -data_width 8 -num_rows 256 -outdata REGISTERED -cascade -1 -resetmode SYNC -sync_reset -memfile c:/users/22822/desktop/2/i2c_master_pcf8591_dac/rom_waveform.mem -memformat hex ")
+  (library ORCLIB
+    (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell VHI
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell VLO
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell DP8KC
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port DIA8
+            (direction INPUT))
+          (port DIA7
+            (direction INPUT))
+          (port DIA6
+            (direction INPUT))
+          (port DIA5
+            (direction INPUT))
+          (port DIA4
+            (direction INPUT))
+          (port DIA3
+            (direction INPUT))
+          (port DIA2
+            (direction INPUT))
+          (port DIA1
+            (direction INPUT))
+          (port DIA0
+            (direction INPUT))
+          (port ADA12
+            (direction INPUT))
+          (port ADA11
+            (direction INPUT))
+          (port ADA10
+            (direction INPUT))
+          (port ADA9
+            (direction INPUT))
+          (port ADA8
+            (direction INPUT))
+          (port ADA7
+            (direction INPUT))
+          (port ADA6
+            (direction INPUT))
+          (port ADA5
+            (direction INPUT))
+          (port ADA4
+            (direction INPUT))
+          (port ADA3
+            (direction INPUT))
+          (port ADA2
+            (direction INPUT))
+          (port ADA1
+            (direction INPUT))
+          (port ADA0
+            (direction INPUT))
+          (port CEA
+            (direction INPUT))
+          (port OCEA
+            (direction INPUT))
+          (port CLKA
+            (direction INPUT))
+          (port WEA
+            (direction INPUT))
+          (port CSA2
+            (direction INPUT))
+          (port CSA1
+            (direction INPUT))
+          (port CSA0
+            (direction INPUT))
+          (port RSTA
+            (direction INPUT))
+          (port DIB8
+            (direction INPUT))
+          (port DIB7
+            (direction INPUT))
+          (port DIB6
+            (direction INPUT))
+          (port DIB5
+            (direction INPUT))
+          (port DIB4
+            (direction INPUT))
+          (port DIB3
+            (direction INPUT))
+          (port DIB2
+            (direction INPUT))
+          (port DIB1
+            (direction INPUT))
+          (port DIB0
+            (direction INPUT))
+          (port ADB12
+            (direction INPUT))
+          (port ADB11
+            (direction INPUT))
+          (port ADB10
+            (direction INPUT))
+          (port ADB9
+            (direction INPUT))
+          (port ADB8
+            (direction INPUT))
+          (port ADB7
+            (direction INPUT))
+          (port ADB6
+            (direction INPUT))
+          (port ADB5
+            (direction INPUT))
+          (port ADB4
+            (direction INPUT))
+          (port ADB3
+            (direction INPUT))
+          (port ADB2
+            (direction INPUT))
+          (port ADB1
+            (direction INPUT))
+          (port ADB0
+            (direction INPUT))
+          (port CEB
+            (direction INPUT))
+          (port OCEB
+            (direction INPUT))
+          (port CLKB
+            (direction INPUT))
+          (port WEB
+            (direction INPUT))
+          (port CSB2
+            (direction INPUT))
+          (port CSB1
+            (direction INPUT))
+          (port CSB0
+            (direction INPUT))
+          (port RSTB
+            (direction INPUT))
+          (port DOA8
+            (direction OUTPUT))
+          (port DOA7
+            (direction OUTPUT))
+          (port DOA6
+            (direction OUTPUT))
+          (port DOA5
+            (direction OUTPUT))
+          (port DOA4
+            (direction OUTPUT))
+          (port DOA3
+            (direction OUTPUT))
+          (port DOA2
+            (direction OUTPUT))
+          (port DOA1
+            (direction OUTPUT))
+          (port DOA0
+            (direction OUTPUT))
+          (port DOB8
+            (direction OUTPUT))
+          (port DOB7
+            (direction OUTPUT))
+          (port DOB6
+            (direction OUTPUT))
+          (port DOB5
+            (direction OUTPUT))
+          (port DOB4
+            (direction OUTPUT))
+          (port DOB3
+            (direction OUTPUT))
+          (port DOB2
+            (direction OUTPUT))
+          (port DOB1
+            (direction OUTPUT))
+          (port DOB0
+            (direction OUTPUT)))))
+    (cell rom_waveform
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port (array (rename Address "Address(7:0)") 8)
+            (direction INPUT))
+          (port OutClock
+            (direction INPUT))
+          (port OutClockEn
+            (direction INPUT))
+          (port Reset
+            (direction INPUT))
+          (port (array (rename Q "Q(7:0)") 8)
+            (direction OUTPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (instance scuba_vhi_inst
+            (viewRef view1 
+              (cellRef VHI)))
+          (instance scuba_vlo_inst
+            (viewRef view1 
+              (cellRef VLO)))
+          (instance rom_waveform_0_0_0
+            (viewRef view1 
+              (cellRef DP8KC))
+            (property INIT_DATA
+              (string "STATIC"))
+            (property ASYNC_RESET_RELEASE
+              (string "SYNC"))
+            (property MEM_LPC_FILE
+              (string "rom_waveform.lpc"))
+            (property MEM_INIT_FILE
+              (string "rom_waveform.mem"))
+            (property INITVAL_1F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_19
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_18
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_17
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_16
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_15
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_14
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_13
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_12
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_11
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_10
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_09
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_08
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_07
+              (string "0x0040400C080140C01C100241402C180341C03C200442404C280542C05C300643406C380743C07C40"))
+            (property INITVAL_06
+              (string "0x0844408C480944C09C500A4540AC580B45C0BC600C4640CC680D46C0DC700E4740EC780F47C0FC80"))
+            (property INITVAL_05
+              (string "0x1028310A871128B11A8F1229312A971329B13A9F142A314AA7152AB15AAF162B316AB7172BB17ABF"))
+            (property INITVAL_04
+              (string "0x182C318AC7192CB19ACF1A2D31AAD71B2DB1BADF1C2E31CAE71D2EB1DAEF1E2F31EAF71F2FB1FAFF"))
+            (property INITVAL_03
+              (string "0x1FAFB1F2F71EAF31E2EF1DAEB1D2E71CAE31C2DF1BADB1B2D71AAD31A2CF19ACB192C718AC3182BF"))
+            (property INITVAL_02
+              (string "0x17ABB172B716AB3162AF15AAB152A714AA31429F13A9B1329712A931228F11A8B1128710A8310280"))
+            (property INITVAL_01
+              (string "0x0FC7C0F4780EC740E4700DC6C0D4680CC640C4600BC5C0B4580AC540A45009C4C0944808C4408440"))
+            (property INITVAL_00
+              (string "0x07C3C0743806C340643005C2C0542804C240442003C1C0341802C140241001C0C0140800C0400400"))
+            (property CSDECODE_B
+              (string "0b111"))
+            (property CSDECODE_A
+              (string "0b000"))
+            (property WRITEMODE_B
+              (string "NORMAL"))
+            (property WRITEMODE_A
+              (string "NORMAL"))
+            (property GSR
+              (string "ENABLED"))
+            (property RESETMODE
+              (string "SYNC"))
+            (property REGMODE_B
+              (string "NOREG"))
+            (property REGMODE_A
+              (string "OUTREG"))
+            (property DATA_WIDTH_B
+              (string "9"))
+            (property DATA_WIDTH_A
+              (string "9")))
+          (net scuba_vhi
+            (joined
+              (portRef Z (instanceRef scuba_vhi_inst))
+              (portRef OCEB (instanceRef rom_waveform_0_0_0))
+              (portRef CEB (instanceRef rom_waveform_0_0_0))
+              (portRef ADA0 (instanceRef rom_waveform_0_0_0))))
+          (net scuba_vlo
+            (joined
+              (portRef Z (instanceRef scuba_vlo_inst))
+              (portRef CSB2 (instanceRef rom_waveform_0_0_0))
+              (portRef CSA2 (instanceRef rom_waveform_0_0_0))
+              (portRef CSB1 (instanceRef rom_waveform_0_0_0))
+              (portRef CSA1 (instanceRef rom_waveform_0_0_0))
+              (portRef CSB0 (instanceRef rom_waveform_0_0_0))
+              (portRef CSA0 (instanceRef rom_waveform_0_0_0))
+              (portRef RSTB (instanceRef rom_waveform_0_0_0))
+              (portRef WEB (instanceRef rom_waveform_0_0_0))
+              (portRef WEA (instanceRef rom_waveform_0_0_0))
+              (portRef CLKB (instanceRef rom_waveform_0_0_0))
+              (portRef ADB12 (instanceRef rom_waveform_0_0_0))
+              (portRef ADA12 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB11 (instanceRef rom_waveform_0_0_0))
+              (portRef ADA11 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB10 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB9 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB8 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB7 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB6 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB5 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB4 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB3 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB2 (instanceRef rom_waveform_0_0_0))
+              (portRef ADA2 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB1 (instanceRef rom_waveform_0_0_0))
+              (portRef ADA1 (instanceRef rom_waveform_0_0_0))
+              (portRef ADB0 (instanceRef rom_waveform_0_0_0))
+              (portRef DIB8 (instanceRef rom_waveform_0_0_0))
+              (portRef DIA8 (instanceRef rom_waveform_0_0_0))
+              (portRef DIB7 (instanceRef rom_waveform_0_0_0))
+              (portRef DIA7 (instanceRef rom_waveform_0_0_0))
+              (portRef DIB6 (instanceRef rom_waveform_0_0_0))
+              (portRef DIA6 (instanceRef rom_waveform_0_0_0))
+              (portRef DIB5 (instanceRef rom_waveform_0_0_0))
+              (portRef DIA5 (instanceRef rom_waveform_0_0_0))
+              (portRef DIB4 (instanceRef rom_waveform_0_0_0))
+              (portRef DIA4 (instanceRef rom_waveform_0_0_0))
+              (portRef DIB3 (instanceRef rom_waveform_0_0_0))
+              (portRef DIA3 (instanceRef rom_waveform_0_0_0))
+              (portRef DIB2 (instanceRef rom_waveform_0_0_0))
+              (portRef DIA2 (instanceRef rom_waveform_0_0_0))
+              (portRef DIB1 (instanceRef rom_waveform_0_0_0))
+              (portRef DIA1 (instanceRef rom_waveform_0_0_0))
+              (portRef DIB0 (instanceRef rom_waveform_0_0_0))
+              (portRef DIA0 (instanceRef rom_waveform_0_0_0))))
+          (net dataout7
+            (joined
+              (portRef (member Q 0))
+              (portRef DOA7 (instanceRef rom_waveform_0_0_0))))
+          (net dataout6
+            (joined
+              (portRef (member Q 1))
+              (portRef DOA6 (instanceRef rom_waveform_0_0_0))))
+          (net dataout5
+            (joined
+              (portRef (member Q 2))
+              (portRef DOA5 (instanceRef rom_waveform_0_0_0))))
+          (net dataout4
+            (joined
+              (portRef (member Q 3))
+              (portRef DOA4 (instanceRef rom_waveform_0_0_0))))
+          (net dataout3
+            (joined
+              (portRef (member Q 4))
+              (portRef DOA3 (instanceRef rom_waveform_0_0_0))))
+          (net dataout2
+            (joined
+              (portRef (member Q 5))
+              (portRef DOA2 (instanceRef rom_waveform_0_0_0))))
+          (net dataout1
+            (joined
+              (portRef (member Q 6))
+              (portRef DOA1 (instanceRef rom_waveform_0_0_0))))
+          (net dataout0
+            (joined
+              (portRef (member Q 7))
+              (portRef DOA0 (instanceRef rom_waveform_0_0_0))))
+          (net Reset
+            (joined
+              (portRef Reset)
+              (portRef RSTA (instanceRef rom_waveform_0_0_0))))
+          (net RdClockEn
+            (joined
+              (portRef OutClockEn)
+              (portRef OCEA (instanceRef rom_waveform_0_0_0))
+              (portRef CEA (instanceRef rom_waveform_0_0_0))))
+          (net rdclk
+            (joined
+              (portRef OutClock)
+              (portRef CLKA (instanceRef rom_waveform_0_0_0))))
+          (net raddr7
+            (joined
+              (portRef (member Address 0))
+              (portRef ADA10 (instanceRef rom_waveform_0_0_0))))
+          (net raddr6
+            (joined
+              (portRef (member Address 1))
+              (portRef ADA9 (instanceRef rom_waveform_0_0_0))))
+          (net raddr5
+            (joined
+              (portRef (member Address 2))
+              (portRef ADA8 (instanceRef rom_waveform_0_0_0))))
+          (net raddr4
+            (joined
+              (portRef (member Address 3))
+              (portRef ADA7 (instanceRef rom_waveform_0_0_0))))
+          (net raddr3
+            (joined
+              (portRef (member Address 4))
+              (portRef ADA6 (instanceRef rom_waveform_0_0_0))))
+          (net raddr2
+            (joined
+              (portRef (member Address 5))
+              (portRef ADA5 (instanceRef rom_waveform_0_0_0))))
+          (net raddr1
+            (joined
+              (portRef (member Address 6))
+              (portRef ADA4 (instanceRef rom_waveform_0_0_0))))
+          (net raddr0
+            (joined
+              (portRef (member Address 7))
+              (portRef ADA3 (instanceRef rom_waveform_0_0_0))))))))
+  (design rom_waveform
+    (cellRef rom_waveform
+      (libraryRef ORCLIB)))
+)

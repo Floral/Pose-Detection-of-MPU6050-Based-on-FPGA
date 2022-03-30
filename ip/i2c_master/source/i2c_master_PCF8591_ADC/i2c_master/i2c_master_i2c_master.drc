@@ -1,0 +1,2 @@
+WARNING - blockcheck: In SLICE i2c_master_config_inst/i2c_master_logic_inst/SLICE_71 LOGIC/RIPPLE mode, LSRONMUX is on but LSRMUX is tied to high.
+DRC detected 0 errors and 1 warnings.

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Flow_Ctrl.v" \
+"../../../../Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Forecast.v" \
+"../../../../Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Iter_Unit.v" \
+"../../../../Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v" \
+"../../../../Pose_Detection_With_Kalman_Filter.srcs/sim_1/new/Kalman_Iter_Unit_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

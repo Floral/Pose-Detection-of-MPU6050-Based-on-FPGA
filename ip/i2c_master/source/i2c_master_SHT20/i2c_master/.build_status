@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1513341655"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1513341645">
+            <Task name="Map" build_result="2" update_result="0" update_time="1513341645"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1513341651">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1513341651"/>
+            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1513341643">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1513341643"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1513341655"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1513341636"/>
+        </Milestone>
+        <Report name=".vdbs/i2c_master_i2c_master_map.vdb" last_build_time="1513341645" last_build_size="162683"/>
+        <Report name="i2c_master_i2c_master.bgn" last_build_time="1513341655" last_build_size="4143"/>
+        <Report name="i2c_master_i2c_master.jed" last_build_time="1513341655" last_build_size="849116"/>
+        <Report name="i2c_master_i2c_master.lsedata" last_build_time="1513341639" last_build_size="960233"/>
+        <Report name="i2c_master_i2c_master.ncd" last_build_time="1513341651" last_build_size="536254"/>
+        <Report name="i2c_master_i2c_master.ngd" last_build_time="1513341643" last_build_size="368647"/>
+        <Report name="i2c_master_i2c_master_map.ncd" last_build_time="1513341644" last_build_size="374079"/>
+    </Strategy>
+</BuildStatus>

@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/Users/22822/Desktop/i2c_master_AT24C02"  

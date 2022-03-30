@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Flow_Ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Kalman_Flow_Ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Forecast.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Kalman_Forecast
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Iter_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Kalman_Iter_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sources_1/new/Kalman_Update.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Kalman_Update
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.srcs/sim_1/new/Kalman_Iter_Unit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Kalman_Iter_Unit_tb

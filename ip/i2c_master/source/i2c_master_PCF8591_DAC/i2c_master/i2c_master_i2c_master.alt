@@ -1,0 +1,12 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Mon Dec 18 08:39:06 2017 *
+NOTE DESIGN NAME: i2c_master *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS rst_n : L14 : in *
+NOTE PINS sys_clk_12m : C1 : in *
+NOTE PINS scl : C8 : out *
+NOTE PINS sda : B8 : inout *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

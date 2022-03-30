@@ -1,0 +1,527 @@
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "i2c_master_AT24C02_i2c_master_AT24C02.ngd" -o "i2c_master_AT24C02_i2c_master_AT24C02_map.ncd" -pr "i2c_master_AT24C02_i2c_master_AT24C02.prf" -mp "i2c_master_AT24C02_i2c_master_AT24C02.mrp" -lpf "C:/Users/22822/Desktop/i2c_master_AT24C02/i2c_master_AT24C02/i2c_master_AT24C02_i2c_master_AT24C02.lpf" -lpf "C:/Users/22822/Desktop/i2c_master_AT24C02/i2c_master_AT24C02.lpf" -c 0            
+map:  version Diamond (64-bit) 3.8.0.115.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: i2c_master_AT24C02_i2c_master_AT24C02.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: E:/lscc/diamond/3.8_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:    122 out of  4635 (3%)
+      PFU registers:          122 out of  4320 (3%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       233 out of  2160 (11%)
+      SLICEs as Logic/ROM:    233 out of  2160 (11%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         32 out of  2160 (1%)
+   Number of LUT4s:        462 out of  4320 (11%)
+      Number used as logic LUTs:        398
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       64
+      Number used as shift registers:     0
+   Number of PIO sites used: 12 + 4(JTAG) out of 105 (15%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  3
+     Net sys_clk_12m_c: 26 loads, 26 rising, 0 falling (Driver: PIO sys_clk_12m )
+     Net clk_div_100k: 55 loads, 55 rising, 0 falling (Driver: clk_div_inst/clk_p_29 )
+     Net i2c_master_config_inst/i2c_flag: 3 loads, 3 rising, 0 falling (Driver: i2c_master_config_inst/i2c_ack_2__I_0_2_lut )
+   Number of Clock Enables:  27
+     Net i2c_master_config_inst/sys_clk_12m_c_enable_10: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/sys_clk_12m_c_enable_8: 4 loads, 4 LSLICEs
+     Net i2c_master_config_inst/i2c_state_1__N_115: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_43: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_53: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_4: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_3: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_18: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_17: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_34: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_27: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_54: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_38: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_44: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_55: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_58: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_52: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_56: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_42: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_45: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_46: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_47: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_48: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_49: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_50: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_51: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_57: 1 loads, 1 LSLICEs
+   Number of LSRs:  27
+     Net clk_div_inst/n4871: 17 loads, 17 LSLICEs
+     Net i2c_master_config_inst/i2c_config_7_N_105_2: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_state_1__N_115: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_config_2: 3 loads, 3 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4897: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_next_14__N_228: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4922: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4916: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4919: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n9508: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4901: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4899: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4895: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4886: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4906: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4905: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n3972: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4885: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4903: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4893: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n10225: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4376: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n9103: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n9105: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n10339: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n9120: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n9509: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_0: 45 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_3: 42 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_4: 35 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_13: 29 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_8: 27 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_10: 26 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_11: 25 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_12: 25 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_2: 25 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_5: 25 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 52 MB
+
+Dumping design to file i2c_master_AT24C02_i2c_master_AT24C02_map.ncd.
+
+ncd2vdb "i2c_master_AT24C02_i2c_master_AT24C02_map.ncd" ".vdbs/i2c_master_AT24C02_i2c_master_AT24C02_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: E:/lscc/diamond/3.8_x64/ispfpga.
+
+mpartrce -p "i2c_master_AT24C02_i2c_master_AT24C02.p2t" -f "i2c_master_AT24C02_i2c_master_AT24C02.p3t" -tf "i2c_master_AT24C02_i2c_master_AT24C02.pt" "i2c_master_AT24C02_i2c_master_AT24C02_map.ncd" "i2c_master_AT24C02_i2c_master_AT24C02.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "i2c_master_AT24C02_i2c_master_AT24C02_map.ncd"
+Sat Dec 16 18:09:41 2017
+
+PAR: Place And Route Diamond (64-bit) 3.8.0.115.3.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF i2c_master_AT24C02_i2c_master_AT24C02_map.ncd i2c_master_AT24C02_i2c_master_AT24C02.dir/5_1.ncd i2c_master_AT24C02_i2c_master_AT24C02.prf
+Preference file: i2c_master_AT24C02_i2c_master_AT24C02.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file i2c_master_AT24C02_i2c_master_AT24C02_map.ncd.
+Design name: i2c_master
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: E:/lscc/diamond/3.8_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   12+4(JTAG)/280     6% used
+                  12+4(JTAG)/105     15% bonded
+
+   SLICE            233/2160         10% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 567
+Number of Connections: 1779
+
+Pin Constraint Summary:
+   12 out of 12 pins locked (100% locked).
+
+The following 2 signals are selected to use the primary clock routing resources:
+    clk_div_100k (driver: clk_div_inst/SLICE_28, clk load #: 55)
+    sys_clk_12m_c (driver: sys_clk_12m, clk load #: 26)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="sys_clk_12m_c" arg1="Primary" arg2="sys_clk_12m" arg3="C1" arg4="Primary"  />
+
+The following 1 signal is selected to use the secondary clock routing resources:
+    clk_div_inst/n4871 (driver: clk_div_inst/SLICE_117, clk load #: 0, sr load #: 17, ce load #: 0)
+
+Signal rst_n_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+.....................
+Placer score = 86380.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  85384
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_div_100k" from Q1 on comp "clk_div_inst/SLICE_28" on site "R3C16C", clk load = 55
+  PRIMARY "sys_clk_12m_c" from comp "sys_clk_12m" on PIO site "C1 (PL4A)", clk load = 26
+  SECONDARY "clk_div_inst/n4871" from F0 on comp "clk_div_inst/SLICE_117" on site "R12C15C", clk load = 0, ce load = 0, sr load = 17
+
+  PRIMARY  : 2 out of 8 (25%)
+  SECONDARY: 1 out of 8 (12%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   12 + 4(JTAG) out of 280 (5.7%) PIO sites used.
+   12 + 4(JTAG) out of 105 (15.2%) bonded PIO sites used.
+   Number of PIO comps: 12; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 2 / 26 (  7%) | 2.5V       | -         |
+| 1        | 3 / 26 ( 11%) | 2.5V       | -         |
+| 2        | 6 / 28 ( 21%) | 2.5V       | -         |
+| 3        | 0 / 7 (  0%)  | -          | -         |
+| 4        | 0 / 8 (  0%)  | -          | -         |
+| 5        | 1 / 10 ( 10%) | 2.5V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 2 secs 
+
+Dumping design to file i2c_master_AT24C02_i2c_master_AT24C02.dir/5_1.ncd.
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+0 connections routed; 1779 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=i2c_master_config_inst/i2c_flag loads=3 clock_loads=3"  />
+
+Completed router resource preassignment. Real time: 5 secs 
+
+Start NBR router at 18:09:46 12/16/17
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 18:09:46 12/16/17
+
+Start NBR section for initial routing at 18:09:46 12/16/17
+Level 4, iteration 1
+33(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 18:09:46 12/16/17
+Level 4, iteration 1
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+Level 4, iteration 2
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+Level 4, iteration 4
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+
+Start NBR section for re-routing at 18:09:46 12/16/17
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+
+Start NBR section for post-routing at 18:09:46 12/16/17
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=i2c_master_config_inst/i2c_flag loads=3 clock_loads=3"  />
+
+Total CPU time 4 secs 
+Total REAL time: 5 secs 
+Completely routed.
+End of route.  1779 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file i2c_master_AT24C02_i2c_master_AT24C02.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 5 secs 
+Total REAL time to completion: 6 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "i2c_master_AT24C02_i2c_master_AT24C02.t2b" -w "i2c_master_AT24C02_i2c_master_AT24C02.ncd" "i2c_master_AT24C02_i2c_master_AT24C02.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.8.0.115.3
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file i2c_master_AT24C02_i2c_master_AT24C02.ncd.
+Design name: i2c_master
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: E:/lscc/diamond/3.8_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from i2c_master_AT24C02_i2c_master_AT24C02.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.92.
+ 
+Saving bit stream in "i2c_master_AT24C02_i2c_master_AT24C02.bit".
+
+bitgen -f "i2c_master_AT24C02_i2c_master_AT24C02.t2b" -w "i2c_master_AT24C02_i2c_master_AT24C02.ncd" -jedec "i2c_master_AT24C02_i2c_master_AT24C02.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.8.0.115.3
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file i2c_master_AT24C02_i2c_master_AT24C02.ncd.
+Design name: i2c_master
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: E:/lscc/diamond/3.8_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from i2c_master_AT24C02_i2c_master_AT24C02.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.92.
+ 
+Saving bit stream in "i2c_master_AT24C02_i2c_master_AT24C02.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

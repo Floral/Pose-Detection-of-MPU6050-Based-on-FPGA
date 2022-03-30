@@ -1,0 +1,453 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Dec 15 20:40:43 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     i2c_master
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk2 [get_nets clk_div_100k]
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 982.646ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1  (from clk_div_100k +)
+   Destination:    FD1S3IX    D              \i2c_master_config_inst/i2c_master_logic_inst/state_current__i3  (to clk_div_100k +)
+
+   Delay:                  17.194ns  (29.7% logic, 70.3% route), 11 logic levels.
+
+ Constraint Details:
+
+     17.194ns data_path \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1 to \i2c_master_config_inst/i2c_master_logic_inst/state_current__i3 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 982.646ns
+
+ Path Details: \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1 to \i2c_master_config_inst/i2c_master_logic_inst/state_current__i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1 (from clk_div_100k)
+Route        67   e 2.328                                  \i2c_master_config_inst/i2c_master_logic_inst/state_current[0]
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i4232_2_lut_rep_250
+Route         5   e 1.405                                  \i2c_master_config_inst/i2c_master_logic_inst/n11213
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i2_3_lut_4_lut_adj_124
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n6_adj_685
+LUT4        ---     0.493              C to Z              \i2c_master_config_inst/i2c_master_logic_inst/i4770_4_lut
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n7009
+LUT4        ---     0.493              C to Z              \i2c_master_config_inst/i2c_master_logic_inst/i3_4_lut_adj_101
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n9516
+LUT4        ---     0.493              D to Z              \i2c_master_config_inst/i2c_master_logic_inst/i2_4_lut_adj_98
+Route         8   e 1.540                                  \i2c_master_config_inst/i2c_master_logic_inst/n7021
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i1_2_lut_rep_122
+Route         2   e 1.141                                  \i2c_master_config_inst/i2c_master_logic_inst/n11085
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i1_4_lut_adj_59
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/state_next_14__N_134[2]
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i8118_4_lut
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n3427
+LUT4        ---     0.493              A to Z              \i2c_master_config_inst/i2c_master_logic_inst/i8123_3_lut
+Route         1   e 0.020                                  \i2c_master_config_inst/i2c_master_logic_inst/n10336
+MUXL5       ---     0.233           BLUT to Z              \i2c_master_config_inst/i2c_master_logic_inst/i8069
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n10338
+                  --------
+                   17.194  (29.7% logic, 70.3% route), 11 logic levels.
+
+
+Passed:  The following path meets requirements by 982.857ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1  (from clk_div_100k +)
+   Destination:    FD1S3IX    D              \i2c_master_config_inst/i2c_master_logic_inst/state_current__i3  (to clk_div_100k +)
+
+   Delay:                  16.983ns  (31.5% logic, 68.5% route), 12 logic levels.
+
+ Constraint Details:
+
+     16.983ns data_path \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1 to \i2c_master_config_inst/i2c_master_logic_inst/state_current__i3 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 982.857ns
+
+ Path Details: \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1 to \i2c_master_config_inst/i2c_master_logic_inst/state_current__i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1 (from clk_div_100k)
+Route        67   e 2.328                                  \i2c_master_config_inst/i2c_master_logic_inst/state_current[0]
+LUT4        ---     0.493              C to Z              \i2c_master_config_inst/i2c_master_logic_inst/i2_3_lut_4_lut_adj_169
+Route         1   e 0.020                                  \i2c_master_config_inst/i2c_master_logic_inst/n9520
+MUXL5       ---     0.233           ALUT to Z              \i2c_master_config_inst/i2c_master_logic_inst/i2406
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n6955
+LUT4        ---     0.493              A to Z              \i2c_master_config_inst/i2c_master_logic_inst/i2_3_lut_adj_102
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n9509
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i4770_4_lut
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n7009
+LUT4        ---     0.493              C to Z              \i2c_master_config_inst/i2c_master_logic_inst/i3_4_lut_adj_101
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n9516
+LUT4        ---     0.493              D to Z              \i2c_master_config_inst/i2c_master_logic_inst/i2_4_lut_adj_98
+Route         8   e 1.540                                  \i2c_master_config_inst/i2c_master_logic_inst/n7021
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i1_2_lut_rep_122
+Route         2   e 1.141                                  \i2c_master_config_inst/i2c_master_logic_inst/n11085
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i1_4_lut_adj_59
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/state_next_14__N_134[2]
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i8118_4_lut
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n3427
+LUT4        ---     0.493              A to Z              \i2c_master_config_inst/i2c_master_logic_inst/i8123_3_lut
+Route         1   e 0.020                                  \i2c_master_config_inst/i2c_master_logic_inst/n10336
+MUXL5       ---     0.233           BLUT to Z              \i2c_master_config_inst/i2c_master_logic_inst/i8069
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n10338
+                  --------
+                   16.983  (31.5% logic, 68.5% route), 12 logic levels.
+
+
+Passed:  The following path meets requirements by 982.857ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1  (from clk_div_100k +)
+   Destination:    FD1S3IX    D              \i2c_master_config_inst/i2c_master_logic_inst/state_current__i3  (to clk_div_100k +)
+
+   Delay:                  16.983ns  (31.5% logic, 68.5% route), 12 logic levels.
+
+ Constraint Details:
+
+     16.983ns data_path \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1 to \i2c_master_config_inst/i2c_master_logic_inst/state_current__i3 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 982.857ns
+
+ Path Details: \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1 to \i2c_master_config_inst/i2c_master_logic_inst/state_current__i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \i2c_master_config_inst/i2c_master_logic_inst/state_current__i1 (from clk_div_100k)
+Route        67   e 2.328                                  \i2c_master_config_inst/i2c_master_logic_inst/state_current[0]
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i4644_4_lut_4_lut
+Route         1   e 0.020                                  \i2c_master_config_inst/i2c_master_logic_inst/n6872
+MUXL5       ---     0.233           BLUT to Z              \i2c_master_config_inst/i2c_master_logic_inst/i2406
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n6955
+LUT4        ---     0.493              A to Z              \i2c_master_config_inst/i2c_master_logic_inst/i2_3_lut_adj_102
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n9509
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i4770_4_lut
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n7009
+LUT4        ---     0.493              C to Z              \i2c_master_config_inst/i2c_master_logic_inst/i3_4_lut_adj_101
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n9516
+LUT4        ---     0.493              D to Z              \i2c_master_config_inst/i2c_master_logic_inst/i2_4_lut_adj_98
+Route         8   e 1.540                                  \i2c_master_config_inst/i2c_master_logic_inst/n7021
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i1_2_lut_rep_122
+Route         2   e 1.141                                  \i2c_master_config_inst/i2c_master_logic_inst/n11085
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i1_4_lut_adj_59
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/state_next_14__N_134[2]
+LUT4        ---     0.493              B to Z              \i2c_master_config_inst/i2c_master_logic_inst/i8118_4_lut
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n3427
+LUT4        ---     0.493              A to Z              \i2c_master_config_inst/i2c_master_logic_inst/i8123_3_lut
+Route         1   e 0.020                                  \i2c_master_config_inst/i2c_master_logic_inst/n10336
+MUXL5       ---     0.233           BLUT to Z              \i2c_master_config_inst/i2c_master_logic_inst/i8069
+Route         1   e 0.941                                  \i2c_master_config_inst/i2c_master_logic_inst/n10338
+                  --------
+                   16.983  (31.5% logic, 68.5% route), 12 logic levels.
+
+Report: 17.354 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk1 [get_nets \i2c_master_config_inst/i2c_done_N_108]
+            5 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 997.934ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \i2c_master_config_inst/i2c_state_FSM_i3  (from \i2c_master_config_inst/i2c_done_N_108 +)
+   Destination:    FD1S3IX    CD             \i2c_master_config_inst/i2c_state_FSM_i3  (to \i2c_master_config_inst/i2c_done_N_108 +)
+
+   Delay:                   1.906ns  (23.3% logic, 76.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.906ns data_path \i2c_master_config_inst/i2c_state_FSM_i3 to \i2c_master_config_inst/i2c_state_FSM_i3 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 997.934ns
+
+ Path Details: \i2c_master_config_inst/i2c_state_FSM_i3 to \i2c_master_config_inst/i2c_state_FSM_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \i2c_master_config_inst/i2c_state_FSM_i3 (from \i2c_master_config_inst/i2c_done_N_108)
+Route         5   e 1.462                                  \i2c_master_config_inst/i2c_config_7__N_106
+                  --------
+                    1.906  (23.3% logic, 76.7% route), 1 logic levels.
+
+
+Passed:  The following path meets requirements by 997.934ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \i2c_master_config_inst/i2c_state_FSM_i3  (from \i2c_master_config_inst/i2c_done_N_108 +)
+   Destination:    FD1S3AY    D              \i2c_master_config_inst/i2c_state_FSM_i1  (to \i2c_master_config_inst/i2c_done_N_108 +)
+
+   Delay:                   1.906ns  (23.3% logic, 76.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.906ns data_path \i2c_master_config_inst/i2c_state_FSM_i3 to \i2c_master_config_inst/i2c_state_FSM_i1 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 997.934ns
+
+ Path Details: \i2c_master_config_inst/i2c_state_FSM_i3 to \i2c_master_config_inst/i2c_state_FSM_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \i2c_master_config_inst/i2c_state_FSM_i3 (from \i2c_master_config_inst/i2c_done_N_108)
+Route         5   e 1.462                                  \i2c_master_config_inst/i2c_config_7__N_106
+                  --------
+                    1.906  (23.3% logic, 76.7% route), 1 logic levels.
+
+
+Passed:  The following path meets requirements by 997.934ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \i2c_master_config_inst/i2c_state_FSM_i3  (from \i2c_master_config_inst/i2c_done_N_108 +)
+   Destination:    FD1S3IX    CD             \i2c_master_config_inst/i2c_state_FSM_i2  (to \i2c_master_config_inst/i2c_done_N_108 +)
+
+   Delay:                   1.906ns  (23.3% logic, 76.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.906ns data_path \i2c_master_config_inst/i2c_state_FSM_i3 to \i2c_master_config_inst/i2c_state_FSM_i2 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 997.934ns
+
+ Path Details: \i2c_master_config_inst/i2c_state_FSM_i3 to \i2c_master_config_inst/i2c_state_FSM_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \i2c_master_config_inst/i2c_state_FSM_i3 (from \i2c_master_config_inst/i2c_done_N_108)
+Route         5   e 1.462                                  \i2c_master_config_inst/i2c_config_7__N_106
+                  --------
+                    1.906  (23.3% logic, 76.7% route), 1 logic levels.
+
+Report: 2.066 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk0 [get_nets sys_clk_12m_c]
+            1597 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 989.813ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \clk_div_inst/cnt_p_1221__i26  (from sys_clk_12m_c +)
+   Destination:    FD1S3IX    CD             \clk_div_inst/cnt_p_1221__i30  (to sys_clk_12m_c +)
+
+   Delay:                  10.027ns  (29.0% logic, 71.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.027ns data_path \clk_div_inst/cnt_p_1221__i26 to \clk_div_inst/cnt_p_1221__i30 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 989.813ns
+
+ Path Details: \clk_div_inst/cnt_p_1221__i26 to \clk_div_inst/cnt_p_1221__i30
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \clk_div_inst/cnt_p_1221__i26 (from sys_clk_12m_c)
+Route         3   e 1.315                                  \clk_div_inst/cnt_p[26]
+LUT4        ---     0.493              B to Z              \clk_div_inst/i8_2_lut
+Route         1   e 0.941                                  \clk_div_inst/n34
+LUT4        ---     0.493              C to Z              \clk_div_inst/i22_4_lut
+Route         1   e 0.941                                  \clk_div_inst/n48
+LUT4        ---     0.493              B to Z              \clk_div_inst/i24_4_lut
+Route         1   e 0.941                                  \clk_div_inst/n50
+LUT4        ---     0.493              B to Z              \clk_div_inst/i25_4_lut
+Route         1   e 0.941                                  \clk_div_inst/n9599
+LUT4        ---     0.493              A to Z              \clk_div_inst/i8132_4_lut
+Route        32   e 2.039                                  \clk_div_inst/n4927
+                  --------
+                   10.027  (29.0% logic, 71.0% route), 6 logic levels.
+
+
+Passed:  The following path meets requirements by 989.813ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \clk_div_inst/cnt_p_1221__i26  (from sys_clk_12m_c +)
+   Destination:    FD1S3IX    CD             \clk_div_inst/cnt_p_1221__i29  (to sys_clk_12m_c +)
+
+   Delay:                  10.027ns  (29.0% logic, 71.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.027ns data_path \clk_div_inst/cnt_p_1221__i26 to \clk_div_inst/cnt_p_1221__i29 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 989.813ns
+
+ Path Details: \clk_div_inst/cnt_p_1221__i26 to \clk_div_inst/cnt_p_1221__i29
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \clk_div_inst/cnt_p_1221__i26 (from sys_clk_12m_c)
+Route         3   e 1.315                                  \clk_div_inst/cnt_p[26]
+LUT4        ---     0.493              B to Z              \clk_div_inst/i8_2_lut
+Route         1   e 0.941                                  \clk_div_inst/n34
+LUT4        ---     0.493              C to Z              \clk_div_inst/i22_4_lut
+Route         1   e 0.941                                  \clk_div_inst/n48
+LUT4        ---     0.493              B to Z              \clk_div_inst/i24_4_lut
+Route         1   e 0.941                                  \clk_div_inst/n50
+LUT4        ---     0.493              B to Z              \clk_div_inst/i25_4_lut
+Route         1   e 0.941                                  \clk_div_inst/n9599
+LUT4        ---     0.493              A to Z              \clk_div_inst/i8132_4_lut
+Route        32   e 2.039                                  \clk_div_inst/n4927
+                  --------
+                   10.027  (29.0% logic, 71.0% route), 6 logic levels.
+
+
+Passed:  The following path meets requirements by 989.813ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \clk_div_inst/cnt_p_1221__i26  (from sys_clk_12m_c +)
+   Destination:    FD1S3IX    CD             \clk_div_inst/cnt_p_1221__i28  (to sys_clk_12m_c +)
+
+   Delay:                  10.027ns  (29.0% logic, 71.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.027ns data_path \clk_div_inst/cnt_p_1221__i26 to \clk_div_inst/cnt_p_1221__i28 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 989.813ns
+
+ Path Details: \clk_div_inst/cnt_p_1221__i26 to \clk_div_inst/cnt_p_1221__i28
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \clk_div_inst/cnt_p_1221__i26 (from sys_clk_12m_c)
+Route         3   e 1.315                                  \clk_div_inst/cnt_p[26]
+LUT4        ---     0.493              B to Z              \clk_div_inst/i8_2_lut
+Route         1   e 0.941                                  \clk_div_inst/n34
+LUT4        ---     0.493              C to Z              \clk_div_inst/i22_4_lut
+Route         1   e 0.941                                  \clk_div_inst/n48
+LUT4        ---     0.493              B to Z              \clk_div_inst/i24_4_lut
+Route         1   e 0.941                                  \clk_div_inst/n50
+LUT4        ---     0.493              B to Z              \clk_div_inst/i25_4_lut
+Route         1   e 0.941                                  \clk_div_inst/n9599
+LUT4        ---     0.493              A to Z              \clk_div_inst/i8132_4_lut
+Route        32   e 2.039                                  \clk_div_inst/n4927
+                  --------
+                   10.027  (29.0% logic, 71.0% route), 6 logic levels.
+
+Report: 10.187 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk2 [get_nets clk_div_100k]            |  1000.000 ns|    17.354 ns|    11  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk1 [get_nets                          |             |             |
+\i2c_master_config_inst/i2c_done_N_108] |  1000.000 ns|     2.066 ns|     1  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets sys_clk_12m_c]           |  1000.000 ns|    10.187 ns|     6  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  10529 paths, 695 nets, and 2185 connections (94.8% coverage)
+
+
+Peak memory: 76107776 bytes, TRCE: 3481600 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

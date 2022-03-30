@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="rom_waveform" module="ROM" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2017 12 15 14:28:36.571" version="5.4" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="" type="" modified="2017 12 15 14:28:36.571"/>
+		<File name="c:/users/22822/desktop/2/i2c_master_pcf8591_dac/rom_waveform.mem" type="mem" modified="2017 12 09 10:10:40.125"/>
+		<File name="rom_waveform.lpc" type="lpc" modified="2017 12 15 14:28:33.076"/>
+		<File name="rom_waveform.v" type="top_level_verilog" modified="2017 12 15 14:28:33.169"/>
+		<File name="rom_waveform_tmpl.v" type="template_verilog" modified="2017 12 15 14:28:33.175"/>
+		<File name="tb_rom_waveform_tmpl.v" type="testbench_verilog" modified="2017 12 15 14:28:33.249"/>
+  </Package>
+</DiamondModule>

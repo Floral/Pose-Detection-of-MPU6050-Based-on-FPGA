@@ -1,0 +1,600 @@
+
+          Lattice Mapping Report File for Design Module 'i2c_master'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     i2c_master_AT24C02_i2c_master_AT24C02.ngd -o
+     i2c_master_AT24C02_i2c_master_AT24C02_map.ncd -pr
+     i2c_master_AT24C02_i2c_master_AT24C02.prf -mp
+     i2c_master_AT24C02_i2c_master_AT24C02.mrp -lpf C:/Users/22822/Desktop/i2c_m
+     aster_AT24C02/i2c_master_AT24C02/i2c_master_AT24C02_i2c_master_AT24C02.lpf
+     -lpf C:/Users/22822/Desktop/i2c_master_AT24C02/i2c_master_AT24C02.lpf -c 0
+     -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.8.0.115.3
+Mapped on:  12/16/17  18:09:40
+
+Design Summary
+--------------
+
+   Number of registers:    122 out of  4635 (3%)
+      PFU registers:          122 out of  4320 (3%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       233 out of  2160 (11%)
+      SLICEs as Logic/ROM:    233 out of  2160 (11%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         32 out of  2160 (1%)
+   Number of LUT4s:        462 out of  4320 (11%)
+      Number used as logic LUTs:        398
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       64
+      Number used as shift registers:     0
+   Number of PIO sites used: 12 + 4(JTAG) out of 105 (15%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  3
+
+                                    Page 1
+
+
+
+
+Design:  i2c_master                                    Date:  12/16/17  18:09:40
+
+Design Summary (cont)
+---------------------
+     Net sys_clk_12m_c: 26 loads, 26 rising, 0 falling (Driver: PIO sys_clk_12m
+     )
+     Net clk_div_100k: 55 loads, 55 rising, 0 falling (Driver:
+     clk_div_inst/clk_p_29 )
+     Net i2c_master_config_inst/i2c_flag: 3 loads, 3 rising, 0 falling (Driver:
+     i2c_master_config_inst/i2c_ack_2__I_0_2_lut )
+   Number of Clock Enables:  27
+     Net i2c_master_config_inst/sys_clk_12m_c_enable_10: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/sys_clk_12m_c_enable_8: 4 loads, 4 LSLICEs
+     Net i2c_master_config_inst/i2c_state_1__N_115: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_43: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_53: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_4: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_3: 1
+     loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_18: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_17: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_34: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_27: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_54: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_38: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_44: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_55: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_58: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_52: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_56: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_42: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_45: 1
+     loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_46: 1
+     loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_47: 1
+     loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_48: 1
+     loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_49: 1
+     loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_50: 1
+     loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_51: 1
+     loads, 1 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  i2c_master                                    Date:  12/16/17  18:09:40
+
+Design Summary (cont)
+---------------------
+     Net i2c_master_config_inst/i2c_master_logic_inst/clk_div_100k_enable_57: 1
+     loads, 1 LSLICEs
+   Number of LSRs:  27
+     Net clk_div_inst/n4871: 17 loads, 17 LSLICEs
+     Net i2c_master_config_inst/i2c_config_7_N_105_2: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_state_1__N_115: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_config_2: 3 loads, 3 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4897: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_next_14__N_228: 2
+     loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4922: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4916: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4919: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n9508: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4901: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4899: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4895: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4886: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4906: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4905: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n3972: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4885: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4903: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4893: 2 loads, 2 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n10225: 1 loads, 1 LSLICEs
+     
+     Net i2c_master_config_inst/i2c_master_logic_inst/n4376: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n9103: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n9105: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n10339: 1 loads, 1 LSLICEs
+     
+     Net i2c_master_config_inst/i2c_master_logic_inst/n9120: 1 loads, 1 LSLICEs
+     Net i2c_master_config_inst/i2c_master_logic_inst/n9509: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_0: 45 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_3: 42 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_4: 35 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_13: 29 loads
+     
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_8: 27 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_10: 26 loads
+     
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_11: 25 loads
+     
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_12: 25 loads
+     
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_2: 25 loads
+     Net i2c_master_config_inst/i2c_master_logic_inst/state_current_5: 25 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+                                    Page 3
+
+
+
+
+Design:  i2c_master                                    Date:  12/16/17  18:09:40
+
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| at24c02_00_data[4]  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| at24c02_00_data[5]  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| at24c02_00_data[6]  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| at24c02_00_data[7]  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| scl                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sda                 | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| at24c02_00_data[3]  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| at24c02_00_data[2]  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| at24c02_00_data[1]  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| at24c02_00_data[0]  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sys_clk_12m         | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i7837 undriven or does not drive anything - clipped.
+Signal n3731 was merged into signal
+     i2c_master_config_inst/i2c_master_logic_inst/sda_ctl
+Signal i2c_master_config_inst/sys_clk_12m_c_enable_9 was merged into signal
+     i2c_master_config_inst/i2c_state_1__N_115
+Signal i2c_master_config_inst/n3942 was merged into signal
+     i2c_master_config_inst/i2c_config_2
+Signal GND_net undriven or does not drive anything - clipped.
+Signal n10715 undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal clk_div_inst/add_6448_24/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_24/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_26/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_26/S0 undriven or does not drive anything -
+
+                                    Page 4
+
+
+
+
+Design:  i2c_master                                    Date:  12/16/17  18:09:40
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal clk_div_inst/add_6448_28/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_28/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_30/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_30/CO undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/cnt_p_1193_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/cnt_p_1193_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/cnt_p_1193_add_4_33/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/cnt_p_1193_add_4_33/CO undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_2/S1 undriven or does not drive anything - clipped.
+     
+Signal clk_div_inst/add_6448_2/S0 undriven or does not drive anything - clipped.
+     
+Signal clk_div_inst/add_6448_2/CI undriven or does not drive anything - clipped.
+     
+Signal clk_div_inst/add_6448_4/S1 undriven or does not drive anything - clipped.
+     
+Signal clk_div_inst/add_6448_4/S0 undriven or does not drive anything - clipped.
+     
+Signal clk_div_inst/add_6448_6/S1 undriven or does not drive anything - clipped.
+     
+Signal clk_div_inst/add_6448_6/S0 undriven or does not drive anything - clipped.
+     
+Signal clk_div_inst/add_6448_8/S1 undriven or does not drive anything - clipped.
+     
+Signal clk_div_inst/add_6448_8/S0 undriven or does not drive anything - clipped.
+     
+Signal clk_div_inst/add_6448_10/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_10/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_12/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_12/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_14/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_14/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_16/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_16/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_18/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_18/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_20/S1 undriven or does not drive anything -
+
+                                    Page 5
+
+
+
+
+Design:  i2c_master                                    Date:  12/16/17  18:09:40
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal clk_div_inst/add_6448_20/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_22/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_div_inst/add_6448_22/S0 undriven or does not drive anything -
+     clipped.
+Block i2c_master_config_inst/i2c_master_logic_inst/i1485_1_lut was optimized
+     away.
+Block i2c_master_config_inst/i2604_1_lut was optimized away.
+Block i2c_master_config_inst/i1669_1_lut was optimized away.
+Block i1 was optimized away.
+Block m0_lut was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_n_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 16 
+
+     Type and instance name of component: 
+   Register : i2c_master_config_inst/at24c02_00_data_i0_i1
+   Register : i2c_master_config_inst/at24c02_00_data_i0_i8
+   Register : i2c_master_config_inst/at24c02_00_data_i0_i4
+   Register : i2c_master_config_inst/at24c02_00_data_i0_i3
+   Register : i2c_master_config_inst/at24c02_00_data_i0_i7
+   Register : i2c_master_config_inst/at24c02_00_data_i0_i2
+   Register : i2c_master_config_inst/at24c02_00_data_i0_i6
+   Register : i2c_master_config_inst/at24c02_00_data_i0_i5
+   Register : i2c_master_config_inst/i2c_master_logic_inst/i2c_read_data_i0_i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/i2c_read_data_i0_i7
+   Register : i2c_master_config_inst/i2c_master_logic_inst/i2c_read_data_i0_i6
+   Register : i2c_master_config_inst/i2c_master_logic_inst/i2c_read_data_i0_i5
+
+                                    Page 6
+
+
+
+
+Design:  i2c_master                                    Date:  12/16/17  18:09:40
+
+GSR Usage (cont)
+----------------
+   Register : i2c_master_config_inst/i2c_master_logic_inst/i2c_read_data_i0_i4
+   Register : i2c_master_config_inst/i2c_master_logic_inst/i2c_read_data_i0_i3
+   Register : i2c_master_config_inst/i2c_master_logic_inst/i2c_read_data_i0_i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/i2c_read_data_i0_i1
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_n_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 93 
+
+     Type and instance name of component: 
+   Register : clk_div_inst/cnt_p_1193__i0
+   Register : clk_div_inst/cnt_p_1193__i31
+   Register : clk_div_inst/cnt_p_1193__i30
+   Register : clk_div_inst/cnt_p_1193__i29
+   Register : clk_div_inst/cnt_p_1193__i28
+   Register : clk_div_inst/cnt_p_1193__i27
+   Register : clk_div_inst/cnt_p_1193__i26
+   Register : clk_div_inst/cnt_p_1193__i25
+   Register : clk_div_inst/cnt_p_1193__i24
+   Register : clk_div_inst/cnt_p_1193__i23
+   Register : clk_div_inst/cnt_p_1193__i22
+   Register : clk_div_inst/cnt_p_1193__i21
+   Register : clk_div_inst/cnt_p_1193__i20
+   Register : clk_div_inst/cnt_p_1193__i19
+   Register : clk_div_inst/cnt_p_1193__i18
+   Register : clk_div_inst/cnt_p_1193__i17
+   Register : clk_div_inst/cnt_p_1193__i16
+   Register : clk_div_inst/cnt_p_1193__i15
+   Register : clk_div_inst/cnt_p_1193__i14
+   Register : clk_div_inst/cnt_p_1193__i13
+   Register : clk_div_inst/cnt_p_1193__i12
+   Register : clk_div_inst/cnt_p_1193__i11
+   Register : clk_div_inst/cnt_p_1193__i10
+   Register : clk_div_inst/cnt_p_1193__i9
+   Register : clk_div_inst/cnt_p_1193__i8
+   Register : clk_div_inst/cnt_p_1193__i7
+   Register : clk_div_inst/cnt_p_1193__i6
+   Register : clk_div_inst/cnt_p_1193__i5
+   Register : clk_div_inst/cnt_p_1193__i4
+   Register : clk_div_inst/cnt_p_1193__i3
+   Register : clk_div_inst/cnt_p_1193__i2
+   Register : clk_div_inst/cnt_p_1193__i1
+   Register : i2c_master_config_inst/i2c_config_i1
+   Register : i2c_master_config_inst/i2c_state_FSM_i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_start_r_i0_i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_reg_addr_1195__i2
+        
+   Register :
+        i2c_master_config_inst/i2c_master_logic_inst/cnt_dev_addr_r_1197__i2
+
+                                    Page 7
+
+
+
+
+Design:  i2c_master                                    Date:  12/16/17  18:09:40
+
+GSR Usage (cont)
+----------------
+   Register :
+        i2c_master_config_inst/i2c_master_logic_inst/cnt_read_reg_data_1198__i3
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_reg_addr_1195__i3
+        
+   Register :
+        i2c_master_config_inst/i2c_master_logic_inst/cnt_read_reg_data_1198__i2
+   Register :
+        i2c_master_config_inst/i2c_master_logic_inst/cnt_dev_addr_r_1197__i1
+   Register :
+        i2c_master_config_inst/i2c_master_logic_inst/cnt_read_reg_data_1198__i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_reg_addr_1195__i1
+        
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_write_reg_data_11
+        96__i3
+   Register : i2c_master_config_inst/i2c_master_logic_inst/i2c_ack__i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_write_reg_data_11
+        96__i2
+   Register :
+        i2c_master_config_inst/i2c_master_logic_inst/cnt_dev_addr_r_1197__i3
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_write_reg_data_11
+        96__i1
+   Register :
+        i2c_master_config_inst/i2c_master_logic_inst/cnt_dev_addr_r_1197__i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_reg_addr_1195__i0
+        
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_stop_i0_i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_s_nack_i0_i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_addr_r_i0_i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_dev_addr_1194__i2
+        
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_stop_i0_i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_start_i0_i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_s_nack_i0_i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_r_addr_i0_i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_write_reg_data_11
+        96__i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/state_current_i6
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_addr_i0_i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_addr_i0_i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_r_addr_i0_i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_w_data_i0_i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_dev_addr_1194__i1
+        
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_s_ack_i0_i0
+   Register :
+        i2c_master_config_inst/i2c_master_logic_inst/cnt_read_reg_data_1198__i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_w_data_i0_i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_addr_r_i0_i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_dev_addr_1194__i3
+        
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_addr_r_i0_i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_start_i0_i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_s_ack_i0_i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_start_r_i0_i1
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_s_ack_i0_i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/state_current_i2
+
+                                    Page 8
+
+
+
+
+Design:  i2c_master                                    Date:  12/16/17  18:09:40
+
+GSR Usage (cont)
+----------------
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_start_r_i0_i2
+   Register : i2c_master_config_inst/i2c_master_logic_inst/state_current_i4
+   Register : i2c_master_config_inst/i2c_master_logic_inst/state_current_i13
+   Register : i2c_master_config_inst/i2c_master_logic_inst/state_current_i12
+   Register : i2c_master_config_inst/i2c_master_logic_inst/state_current_i11
+   Register : i2c_master_config_inst/i2c_master_logic_inst/state_current_i10
+   Register : i2c_master_config_inst/i2c_master_logic_inst/state_current_i9
+   Register : i2c_master_config_inst/i2c_master_logic_inst/state_current_i8
+   Register : i2c_master_config_inst/i2c_master_logic_inst/state_current_i7
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_dev_addr_1194__i0
+        
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_addr_i0_i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_s_nack_i0_i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_stop_i0_i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_start_i0_i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_w_data_i0_i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/cnt_ack_r_addr_i0_i0
+   Register : i2c_master_config_inst/i2c_master_logic_inst/i2c_ack__i1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 52 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 9
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights
+     reserved.

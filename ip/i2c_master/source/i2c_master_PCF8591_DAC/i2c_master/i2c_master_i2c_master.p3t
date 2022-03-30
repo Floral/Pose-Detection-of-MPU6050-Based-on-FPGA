@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "i2c_master_i2c_master.log"
+-o "i2c_master_i2c_master.csv"
+-pr "i2c_master_i2c_master.prf"

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Feb 23 16:23:19 2022
+# Process ID: 11232
+# Current directory: C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/square_root_synth_1
+# Command line: vivado.exe -log square_root.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source square_root.tcl
+# Log file: C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/square_root_synth_1/square_root.vds
+# Journal file: C:/Documents/Xilinx_project/FPGA/Pose_Detection_With_Kalman_Filter/Pose_Detection_With_Kalman_Filter.runs/square_root_synth_1\vivado.jou
+# Running On: DESKTOP-DOA, OS: Windows, CPU Frequency: 3800 MHz, CPU Physical cores: 16, Host memory: 34282 MB
+#-----------------------------------------------------------
+source square_root.tcl -notrace

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../Pose_Detection_With_Kalman_Filter.srcs/sources_1/ip/square_root/sim/square_root.vhd" \
+
+nosort
