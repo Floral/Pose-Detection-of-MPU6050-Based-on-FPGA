@@ -105,3 +105,10 @@ output	[5:0]		dig_out		// 不同数码管有效/使能输出
 ### cordic_arcsin_arccos
 
 注意该模块中有一个需要读入的atan数据文件`atan.data`在`project/vivado/Pose_Detection_With_Kalman_Filter/C_model/`下。
+
+
+
+### UART with fifo
+
+uart速率默认为115200
+
